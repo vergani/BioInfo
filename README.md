@@ -1,6 +1,8 @@
 # BioInfo
-
- sudo apt install samtools
+```fundamental
+ncat -nvlp 9000
+```
+sudo apt install samtools
 
 sudo apt install bwa
 
