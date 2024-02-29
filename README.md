@@ -1,6 +1,6 @@
 # BioInfo
 
-sudo apt install samtools
+'sudo apt install samtools'
 
 sudo apt install bwa
 
