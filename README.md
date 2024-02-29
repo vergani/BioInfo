@@ -14,13 +14,13 @@ https://github.com/Illumina/ExpansionHunter/blob/master/docs/02_Installation.md
 wget https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta
 ```
 ```
-../tools/ExpansionHunter/bin/ExpansionHunter --reads ../Documents/DNA-Vicente/NG1PSZ7BE9.mm2.sortdup.bqsr.cram --reference Homo_sapiens_assembly38.fasta  --variant-catalog variant_catalog-all.json  --output-prefix VIVICO
+../tools/ExpansionHunter/bin/ExpansionHunter --reads sample.cram --reference Homo_sapiens_assembly38.fasta  --variant-catalog variant_catalog-all.json  --output-prefix sample
 ```
 ```
-GangSTR --bam /home/bioinfo/Documents/DNA-Vicente/NG1PSZ7BE9.mm2.sortdup.bqsr.cram --ref /home/bioinfo/Downloads/Homo_sapiens_assembly38.fasta --regions /home/bioinfo/Downloads/hg19_ver13_1.bed --out vicolinoG
+GangSTR --bam sample.cram --ref Homo_sapiens_assembly38.fasta --regions hg19_ver13_1.bed --out sample
 ```
 ```
-./HipSTR --bams /home/bioinfo/Documents/DNA-Vicente/NG1PSZ7BE9.mm2.sortdup.bqsr.cram --fasta /home/bioinfo/Downloads/Homo_sapiens_assembly38.fasta --regions /home/bioinfo/Downloads/hg38.hipstr_reference-X.bed --str-vcf str_calls-vico.vcf.gz
+./HipSTR --bams sample.cram --fasta Homo_sapiens_assembly38.fasta --regions hg38.hipstr_reference-X.bed --str-vcf str_calls.vcf.gz
 ```
 
 ```
