@@ -53,6 +53,7 @@ Source: DNA
 Type: exome
 paired
 Plataform: 'optional'
-Anotar o "accession number" para importar no galaxy
+Anotar o "accession number" caso precise voltar novamente no mesmo exome.
+A coluna "run" tem um ID específico que serve para importar no galaxy
 
 https://usegalaxy.org
