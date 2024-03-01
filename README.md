@@ -12,6 +12,7 @@ sudo apt install bedtools
 ```
 
 avaliar qualidade e outras estatisticas arquivo fastq:
+
 ```
 sudo apt install fastp 
 ``
@@ -34,11 +35,13 @@ GangSTR --bam sample.cram --ref Homo_sapiens_assembly38.fasta --regions hg19_ver
 
 Quando preciso trabalhar com um fastq, antes preciso alguns ajustes e preparações:
 indexar o fasta de referência:
+
 ```
 bwa index Homo_sapiens_assembly38.fasta
 ```
 
-alinhar (opcional mas comendado):
+
+Alinhar (opcional mas comendado):
 
 
 bwa mem Homo_sapiens_assembly38.fasta sample.fastq.gz > sample.bam
