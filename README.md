@@ -7,6 +7,10 @@ sudo apt install samtools
 sudo apt install bwa
 ```
 
+```
+sudo apt install bedtools
+```
+
 
 https://github.com/Illumina/ExpansionHunter/blob/master/docs/02_Installation.md
 
