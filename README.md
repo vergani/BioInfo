@@ -42,10 +42,9 @@ bwa index Homo_sapiens_assembly38.fasta
 
 
 Alinhar (opcional mas comendado):
-
-
+```
 bwa mem Homo_sapiens_assembly38.fasta sample.fastq.gz > sample.bam
-
+```
 
 ### Galaxy workflow
 
