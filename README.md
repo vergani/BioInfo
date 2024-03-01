@@ -42,3 +42,17 @@ alinhar (opcional mas comendado):
 ```
 bwa mem Homo_sapiens_assembly38.fasta sample.fastq.gz > sample.bam
 ```
+
+
+### Galawy workflow
+
+https://www.ncbi.nlm.nih.gov/sra/?term=exome
+
+Access: publici
+Source: DNA
+Type: exome
+paired
+Plataform: 'optional'
+Anotar o "accession number" para importar no galaxy
+
+https://usegalaxy.org
