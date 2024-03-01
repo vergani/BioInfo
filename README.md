@@ -47,7 +47,7 @@ Alinhar (opcional mas comendado):
 bwa mem Homo_sapiens_assembly38.fasta sample.fastq.gz > sample.bam
 
 
-Galaxy workflow
+### Galaxy workflow
 
 https://www.ncbi.nlm.nih.gov/sra/?term=exome
 
