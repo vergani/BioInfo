@@ -11,6 +11,11 @@ sudo apt install bwa
 sudo apt install bedtools
 ```
 
+avaliar qualidade e outras estatisticas arquivo fastq:
+```
+sudo apt install fastp 
+``
+
 
 https://github.com/Illumina/ExpansionHunter/blob/master/docs/02_Installation.md
 
