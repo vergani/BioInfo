@@ -18,6 +18,21 @@ sudo apt install fastp
 ```
 
 
+
+### Stripy
+
+pip install regex
+pip install pysam
+pip install nump
+pip install numpy
+sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0 gir1.2-webkit2-4.1
+
+
+
+Pipeline: antes de qualquer coisa, improtante saber read lenght do fastq para só depois indexar e seguir pipeline:
+
+
+
 https://github.com/Illumina/ExpansionHunter/blob/master/docs/02_Installation.md
 
 ```
@@ -37,7 +52,7 @@ GangSTR --bam sample.cram --ref Homo_sapiens_assembly38.fasta --regions hg19_ver
 Checar algumas info interessantes sobre o fastq:
 ```
 fastp -i DRR253030.fastq.gz
-``
+```
 
 
 Quando preciso trabalhar com um fastq, antes preciso alguns ajustes e preparações:
