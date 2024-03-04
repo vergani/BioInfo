@@ -1,4 +1,6 @@
 # BioInfo
+
+
 ```
 sudo apt install samtools
 ```
@@ -26,11 +28,6 @@ pip install numpy
 sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0 gir1.2-webkit2-4.1
 ```
 ---
-
-Pipeline: antes de qualquer coisa, improtante saber read lenght do fastq para só depois indexar e seguir pipeline
-Também intersantes saber se é single ou paired. geralmente se tem dois arquivos R1 e R2 Paired-End Reads
-
-
 
 https://github.com/Illumina/ExpansionHunter/blob/master/docs/02_Installation.md
 
@@ -66,7 +63,7 @@ Alinhar (opcional mas comendado):
 ```
 bwa mem Homo_sapiens_assembly38.fasta sample.fastq.gz > sample.bam
 ```
-
+---
 ### Galaxy workflow
 
 https://www.ncbi.nlm.nih.gov/sra/?term=exome
