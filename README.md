@@ -51,6 +51,11 @@ fastp -i DRR253030.fastq.gz
 ```
 
 
+checar info interessante sobre CRAM ou BAM (se foi alinhado com HG38 ou HG19 por exemplo):
+```
+samtools view -H sample.BAM/CRAM
+``
+
 Quando preciso trabalhar com um fastq, antes preciso alguns ajustes e preparações:
 indexar o fasta de referência:
 
