@@ -1,5 +1,6 @@
 # BioInfo
 
+bowtie2 - boa alternativa de alinhamento ao inves de usar bwa, mas precisa ter um indice pronto. (posso usar no galaxy qe é mais rápido).
 
 ```
 sudo apt install samtools
