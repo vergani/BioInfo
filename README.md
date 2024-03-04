@@ -11,8 +11,6 @@ sudo apt install bwa
 sudo apt install bedtools
 ```
 
-avaliar qualidade e outras estatisticas arquivo fastq:
-
 ```
 sudo apt install fastp 
 ```
@@ -27,7 +25,7 @@ pip install nump
 pip install numpy
 sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0 gir1.2-webkit2-4.1
 
-
+--------------------
 
 Pipeline: antes de qualquer coisa, improtante saber read lenght do fastq para só depois indexar e seguir pipeline
 Também intersantes saber se é single ou paired. geralmente se tem dois arquivos R1 e R2 Paired-End Reads
