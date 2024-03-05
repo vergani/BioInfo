@@ -90,6 +90,7 @@ A coluna "run" tem um ID específico que serve para importar no galaxy (ex: SRR2
 
 https://usegalaxy.org
 
+---
 ### Treparse pipeline
 Depois de instalado direitinho:
 ```
