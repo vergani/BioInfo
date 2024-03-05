@@ -102,7 +102,8 @@ $ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tred.py sampl
 ```
 
 onde samples é:
-```#SampleKey,BAM,TRED
+```
+#SampleKey,BAM,TRED
 t001,DRR253030-galaxy-BWA.bam,SCA1
 ```
 
