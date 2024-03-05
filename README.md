@@ -93,6 +93,7 @@ https://usegalaxy.org
 ---
 ### Treparse pipeline
 https://github.com/humanlongevity/tredparse/
+
 Depois de instalado direitinho:
 ```
 $ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tred.py --tred FXS /home/bioinfo/Documents/DNA-Vicente/NG1PSZ7BE9.mm2.sortdup.bqsr.cram
