@@ -89,3 +89,26 @@ Anotar o "accession number" caso precise voltar novamente no mesmo exome.
 A coluna "run" tem um ID específico que serve para importar no galaxy (ex: SRR25306983)
 
 https://usegalaxy.org
+
+### Treparse pipeline
+Depois de instalado direitinho:
+```
+$ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tred.py --tred FXS /home/bioinfo/Documents/DNA-Vicente/NG1PSZ7BE9.mm2.sortdup.bqsr.cram
+```
+ou
+```
+$ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tred.py samples.csv
+```
+
+onde samples é:
+```#SampleKey,BAM,TRED
+t001,DRR253030-galaxy-BWA.bam,SCA1```
+
+então:
+```
+$ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tredreport.py t001.json --tsv work.tsv
+```
+```
+$ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tredplot.py likelihood 001.json --tred HD
+```
+
