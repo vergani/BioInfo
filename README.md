@@ -70,6 +70,12 @@ Para criar índice usando bowtie2:
 bowtie2-build Homo_sapiens_assembly38.fasta Homo_sapiens_assembly38_bowtie2
 ```
 
+também posso baixar os índices prontos para usar no bownti2:
+```
+https://benlangmead.github.io/aws-indexes/bowtie
+```
+
+
 Alinhar (opcional mas comendado):
 ```
 bwa mem Homo_sapiens_assembly38.fasta sample.fastq.gz > sample.bam
