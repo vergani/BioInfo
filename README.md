@@ -65,6 +65,10 @@ indexar o fasta de referência:
 bwa index Homo_sapiens_assembly38.fasta
 ```
 
+Para criar índice usando bowtie2:
+```
+bowtie2-build Homo_sapiens_assembly38.fasta Homo_sapiens_assembly38_bowtie2
+```
 
 Alinhar (opcional mas comendado):
 ```
