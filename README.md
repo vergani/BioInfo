@@ -80,6 +80,23 @@ Alinhar (opcional mas comendado):
 ```
 bwa mem Homo_sapiens_assembly38.fasta sample.fastq.gz > sample.bam
 ```
+
+---
+
+
+Para converter dois paired end fastq para sam e depois bam:
+Here's how you can integrate SAMtools into your Bowtie2 alignment process:
+```
+bowtie2 -p 7 -x grch38_1kgmaj/grch38_1kgmaj DRR253030.fastq.gz -S DRR253030_bwt_hg38.sam | samtools view -b -o DRR_bwt_hg38_sam.bam
+```
+After this step, you can further compress, index, and sort the BAM file using SAMtools:
+```
+samtools sort alignment.bam -o alignment_sorted.bam
+samtools index alignment_sorted.bam
+```
+
+
+
 ---
 ### Galaxy workflow
 
