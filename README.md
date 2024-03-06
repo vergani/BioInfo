@@ -24,6 +24,11 @@ sudo apt install fastp
 
 ---
 
+geralmente o pipelane no que diz respeito às extensões é:
+fastq -> sam -> bam -> cram
+
+---
+
 ### Stripy
 ```
 pip install regex
