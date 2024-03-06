@@ -86,10 +86,10 @@ bwa mem Homo_sapiens_assembly38.fasta sample.fastq.gz > sample.bam
 
 Para converter dois paired end fastq para sam e depois bam:
 ```
-bowtie2 -p4 -x grch38_1kgmaj/grch38_1kgmaj -1 NG1P_1.fq.gz -2 NG1P_2.fq.gz -S NG-Vi-bowtie2-hg38.sam
+bowtie2 -p 7 -x grch38_1kgmaj/grch38_1kgmaj -1 NG1P_1.fq.gz -2 NG1P_2.fq.gz -S NG-Vi-bowtie2-hg38.sam
 ```
 
-Se for um single end:
+Se for um single end (usar opção -U):
 ```
 bowtie2 -p 7 -x grch38_1kgmaj/grch38_1kgmaj -U DRR253030.fastq.gz -S DRR253030_bwt_hg38.sam
 samtools view -b DRR253030_bwt_hg38.sam -o DRR_bwt_hg38_sam.bam
