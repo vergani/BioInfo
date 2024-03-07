@@ -6,7 +6,7 @@ https://storage.googleapis.com/gcp-public-data--broad-references/hg19/v0/Homo_sa
 
 bowtie2 - boa alternativa de alinhamento ao inves de usar bwa, mas precisa ter um indice pronto. (posso usar no galaxy qe é mais rápido).
 ```
-minimap2 - até agora mais eficiente que encontrei para alinhar e mapear e cram.
+minimap2 - até agora mais eficiente que encontrei para alinhar e mapear e cram. Testei com sucesso no galaxy
 ```
 
 
