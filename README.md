@@ -50,6 +50,13 @@ FORMATO MAIS RECENTE:
 
 In summary, while sequence mapping focuses on aligning reads to a reference sequence to determine their positions, sequence alignment involves comparing two or more sequences to identify regions of similarity or homology, regardless of whether a reference sequence is involved.
 
+---
+
+### Tipos de variações genéticas
+
+![image](https://github.com/vergani/BioInfo/assets/35334365/ffa49df4-8c0c-46fa-9e6f-ec16c141e8ae)
+
+
 
 ---
 
