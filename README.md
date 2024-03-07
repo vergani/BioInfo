@@ -44,6 +44,12 @@ FORMATO MAIS RECENTE:
 
 ![image](https://github.com/vergani/BioInfo/assets/35334365/33028957-208a-4638-a0ea-648f1b66a94f)
 
+---
+
+### Sequence mapping versus alignment
+
+In summary, while sequence mapping focuses on aligning reads to a reference sequence to determine their positions, sequence alignment involves comparing two or more sequences to identify regions of similarity or homology, regardless of whether a reference sequence is involved.
+
 
 ---
 
