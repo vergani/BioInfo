@@ -37,7 +37,7 @@ The main features of STRiPY include:
 
 STRiPY is particularly useful for studying STR variation in human populations, understanding the genetic basis of complex traits and diseases, and exploring population genetics and evolutionary studies.
 
-    # asdfa dfa dfa sdf 
+
 
 ---
 
