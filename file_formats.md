@@ -7,7 +7,7 @@ fastq -> sam -> bam -> cram
 ---
 
 
-### Sobre fastq files
+### FASTQ
 
 FORMATO MAIS ANTIGO:
 
@@ -33,7 +33,7 @@ RECORDS:  containing structured read information (1 line per read record)
 
 ---
 
-### VCF format
+### VCF
 
 The variant call format (VCF) is a generic format for storing DNA polymorphism data such as SNPs, insertions, deletions and structural variants, together with rich annotations. VCF is usually stored in a compressed manner and can be indexed for fast data retrieval of variants from a range of positions on the reference genome.
 
