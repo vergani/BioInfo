@@ -11,7 +11,9 @@ Tools designed to target specific disease-associated repeat expansions, here are
 https://github.com/Illumina/ExpansionHunter/blob/master/docs/02_Installation.md
 
     ExpansionHunter --reads sample.cram --reference Homo_sapiens_assembly38.fasta  --variant-catalog variant_catalog-all.json  --output-prefix sample
+    
     GangSTR --bam sample.cram --ref Homo_sapiens_assembly38.fasta --regions hg19_ver13_1.bed --out sample
+    
     ./HipSTR --bams sample.cram --fasta Homo_sapiens_assembly38.fasta --regions hg38.hipstr_reference-X.bed --str-vcf str_calls.vcf.gz
 
 
@@ -40,24 +42,20 @@ STRiPY is particularly useful for studying STR variation in human populations, u
 https://github.com/humanlongevity/tredparse/
 
 Depois de instalado direitinho:
-```
-$ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tred.py --tred FXS saple.cram
-```
+    $ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tred.py --tred FXS saple.cram
+
 ou, melhor ainda:
-```
-$ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tred.py samples.csv
-```
+
+    $ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tred.py samples.csv
+
 
 onde samples é:
-```
-#SampleKey,BAM,TRED
-t001,DRR253030-galaxy-BWA.bam,FXS
-```
+
+    #SampleKey,BAM,TRED
+    t001,DRR253030-galaxy-BWA.bam,FXS
 
 então:
-```
-$ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tredreport.py t001.json --tsv work.tsv
-```
-```
-$ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tredplot.py likelihood 001.json --tred HD
-```
+    $ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tredreport.py t001.json --tsv work.tsv
+
+    $ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tredplot.py likelihood 001.json --tred HD
+
