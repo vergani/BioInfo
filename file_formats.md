@@ -110,5 +110,28 @@ samtools index alignment_sorted.bam
 ```
 minimap2 -t <threads> -x <preset> reference_index reads_R1.fastq reads_R2.fastq > alignment.sam
 ```
+Depois de rodar o mapeamento, é interessante rodar um flagstat do samtools para ver percentual de mapeamento e também se há leituras duplicadas.
+
+Exemplo de saída do flagstat:
+    820180215 + 0 in total (QC-passed reads + QC-failed reads)
+    818629760 + 0 primary
+    0 + 0 secondary
+    1550455 + 0 supplementary
+    0 + 0 duplicates
+    0 + 0 primary duplicates
+    638756417 + 0 mapped (77.88% : N/A)
+    637205962 + 0 primary mapped (77.84% : N/A)
+    818629760 + 0 paired in sequencing
+    409314880 + 0 read1
+    409314880 + 0 read2
+    623637416 + 0 properly paired (76.18% : N/A)
+    634163548 + 0 with itself and mate mapped
+    3042414 + 0 singletons (0.37% : N/A)
+    6854466 + 0 with mate mapped to a different chr
+    4351136 + 0 with mate mapped to a different chr (mapQ>=5)
+
+Se o mapeamento ficar ruim, talves está usando um genoma de referência errado ou o fastq do passo anterior não foi bem trimado.
+
+Caso haja leituras duplicadas, podemos rodar um `MarkDuplicates`
 
 
