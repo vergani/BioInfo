@@ -64,6 +64,22 @@ FORMATO MAIS RECENTE:
 
 ---
 
+### SAM file format (sequence alignment map)
+» Texto plano (humam readable)
+» Contém: Qualit Scores, Sequence Info (fastq) + Alignment Info + MetaData
+
+HEADER: contém metadata (sequence dictionary, read group definitions, etc)
+RECORDS:  containing structured read information (1 line per read record)
+
+![image](https://github.com/vergani/BioInfo/assets/35334365/d04ac79e-b690-4eb2-bf3c-44e2e329b2de)
+
+
+![image](https://github.com/vergani/BioInfo/assets/35334365/1d22f2ad-54a6-495c-8162-aabb442810ed)
+
+
+
+---
+
 ### Sequence mapping versus alignment
 
 In summary, while sequence mapping focuses on aligning reads to a reference sequence to determine their positions, sequence alignment involves comparing two or more sequences to identify regions of similarity or homology, regardless of whether a reference sequence is involved.
