@@ -79,6 +79,15 @@ bwa mem Homo_sapiens_assembly38.fasta sample.fastq.gz > sample.bam
 
 ---
 
+## HISAT2
+A fast and sensitive alignment program
+Aqui já vamos faze ro esquema de alinhar com os genes do arquivo GTF para a referencia:
+  Selecionar fastq
+  Print alignment summary to a file.
+  Spliced alignment options (selecionar GTF do genoma de referência)
+
+
+---
 
 Para converter dois paired end fastq para sam e depois bam:
 ```
