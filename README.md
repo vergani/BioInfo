@@ -34,13 +34,13 @@ https://storage.googleapis.com/gcp-public-data--broad-references/hg19/v0/Homo_sa
 ---
 
 
-### Sequence mapping versus alignment
+## Sequence mapping versus alignment
 
 In summary, while sequence mapping focuses on aligning reads to a reference sequence to determine their positions, sequence alignment involves comparing two or more sequences to identify regions of similarity or homology, regardless of whether a reference sequence is involved.
 
 ---
 
-### Tipos de variações genéticas
+## Tipos de variações genéticas
 
 ![image](https://github.com/vergani/BioInfo/assets/35334365/ffa49df4-8c0c-46fa-9e6f-ec16c141e8ae)
 
