@@ -1,6 +1,8 @@
 # File Expansion (STRs)
 
-### Sobre as ferramentas de tandem repeats:
+Tools designed to target specific disease-associated repeat expansions, here are a few options:
+
+### Sumário que algumas ferramentas:
 
 ![image](https://github.com/vergani/BioInfo/assets/35334365/8a43286d-6dac-4264-9578-6f2d746e8041)
 
