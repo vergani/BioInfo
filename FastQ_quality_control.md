@@ -42,14 +42,3 @@ Eles descartam regiões de qualidade pobre em nossa sequencia.
 
 
 
-## FreeBayes
-Variant detector
-Input: CRAM or BAM
-Choose parameter selection level: 	full
-
-
-
-
-
-
-https://usegalaxy.org
