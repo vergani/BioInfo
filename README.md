@@ -87,14 +87,14 @@ Detalhes sobre resultado:
 - [ ] https://github.com/octo-org/octo-repo/issues/740
 - [ ] Add delight to the experience when all tasks are complete :tada:
 
-`» Per base sequence quality - `
-`» Per sequence quality scores - eventualmente pode ter noise no começo, sem problema.`
- » Per base sequence content - é um dos indicadores mais importantes junto com o primeiro.
-» Per base N content - quando a máqunia nao tem certeza de qual letra é, coloca um N, portanto, melhor que seja zero.
-» Sequence Length Distribution
-» Sequence Duplication Levels - quanto maior percentual, melhor
-» Overrepresented sequences
-» Adapter Content - 
+`» Per base sequence quality` - 
+`» Per sequence quality scores` - eventualmente pode ter noise no começo, sem problema.
+`» Per base sequence content ` - é um dos indicadores mais importantes junto com o primeiro.
+`» Per base N content` - quando a máqunia nao tem certeza de qual letra é, coloca um N, portanto, melhor que seja zero.
+`» Sequence Length Distribution`
+`» Sequence Duplication Levels` - quanto maior percentual, melhor
+`» Overrepresented sequences`
+`» Adapter Content` - 
 
 
 
