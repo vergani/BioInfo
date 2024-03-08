@@ -1,6 +1,6 @@
 # BioInfo
 
-[Conceitos Básicos](conceitos_basico.md)
+[Conceitos Básicos](main/conceitos_basicos.md)
 
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
