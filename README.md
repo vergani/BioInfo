@@ -6,6 +6,8 @@
 
 [Setup Tools](setup.md)
 
+[Find Expansions - STR](find_expansions.md)
+
 [Pipelines](pipelines.md)
 
 
