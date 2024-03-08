@@ -79,7 +79,7 @@ bwa mem Homo_sapiens_assembly38.fasta sample.fastq.gz > sample.bam
 
 ---
 
-## HISAT2
+## HISAT2 (não testei isso especificamente)
 A fast and sensitive alignment program
 Aqui já vamos faze ro esquema de alinhar com os genes do arquivo GTF para a referencia:
   Selecionar fastq
