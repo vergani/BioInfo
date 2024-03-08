@@ -86,6 +86,8 @@ Aqui já vamos faze ro esquema de alinhar com os genes do arquivo GTF para a ref
   Print alignment summary to a file.
   Spliced alignment options (selecionar GTF do genoma de referência)
 
+agora vamos usar o `htseq` para ver o número de leituras de um gene em particulas naquele exoma
+
 
 ---
 
