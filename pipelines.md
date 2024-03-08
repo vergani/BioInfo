@@ -43,6 +43,10 @@ Eles descartam regiões de qualidade pobre em nossa sequencia.
 » Done
 
 
+## FreeBayes
+Variant detector
+Input: CRAM or BAM
+Choose parameter selection level: 	full
 
 
 
