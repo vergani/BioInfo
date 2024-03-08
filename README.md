@@ -1,6 +1,10 @@
 # BioInfo
 
 [Conceitos Básicos](conceitos_basicos.md)
+[File Formats](file_formats.md)
+[Setup Tools](setup.md)
+[Pipelines](pipelines.md)
+
 
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
