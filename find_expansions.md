@@ -20,11 +20,26 @@ GangSTR --bam sample.cram --ref Homo_sapiens_assembly38.fasta --regions hg19_ver
 ./HipSTR --bams sample.cram --fasta Homo_sapiens_assembly38.fasta --regions hg38.hipstr_reference-X.bed --str-vcf str_calls.vcf.gz
 ```
 
+---
 
+## Stripy
+A software tool developed for analyzing short tandem repeat (STR) variation in human populations. STRiPY is designed to identify and genotype STR loci from high-throughput sequencing data, with a focus on STRs in the human genome.
 
+The main features of STRiPY include:
+
+    Identification of STR Loci: STRiPY uses high-throughput sequencing data, such as whole-genome or whole-exome sequencing data, to identify STR loci across the human genome. It detects regions of repetitive sequences indicative of STRs.
+
+    Genotyping STRs: Once STR loci are identified, STRiPY genotypes these loci, providing information about the repeat motif and allele lengths for each individual in the dataset.
+
+    Population Analysis: STRiPY facilitates population-level analyses of STR variation, allowing researchers to explore patterns of STR diversity and allele frequencies across different human populations.
+
+    Integration with Bioinformatics Pipelines: STRiPY can be integrated into bioinformatics pipelines for processing sequencing data, enabling researchers to include STR analysis as part of their genomic analyses.
+
+STRiPY is particularly useful for studying STR variation in human populations, understanding the genetic basis of complex traits and diseases, and exploring population genetics and evolutionary studies.
 
 
 ---
+
 ### Treparse pipeline
 https://github.com/humanlongevity/tredparse/
 
