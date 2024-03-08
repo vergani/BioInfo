@@ -6,25 +6,10 @@ minimap2 - até agora mais eficiente que encontrei para alinhar e mapear e cram.
 
 HISAT2 - ainda não testei no galaxy mas promete ser eficiente e rápido (acho que a saída é apenas BAM mesmo)
 
-
-
-```
-sudo apt install samtools
-```
-
-```
-sudo apt install bwa
-```
-
-```
-sudo apt install bedtools
-```
-
-```
-sudo apt install fastp 
-```
-
----
+    sudo apt install samtools
+    sudo apt install bwa
+    sudo apt install bedtools
+    sudo apt install fastp 
 
 
 
