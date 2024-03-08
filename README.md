@@ -67,7 +67,7 @@ In summary, while sequence mapping focuses on aligning reads to a reference sequ
 #### FastqC
 Detalhes sobre resultado:
 
- » Per base sequence quality - 
+'» Per base sequence quality - '
  » Per sequence quality scores - eventualmente pode ter noise no começo, sem problema.
  » Per base sequence content - é um dos indicadores mais importantes junto com o primeiro.
 » Per base N content - quando a máqunia nao tem certeza de qual letra é, coloca um N, portanto, melhor que seja zero.
