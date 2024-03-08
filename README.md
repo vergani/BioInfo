@@ -66,21 +66,30 @@ In summary, while sequence mapping focuses on aligning reads to a reference sequ
 
 #### FastqC
 Detalhes sobre resultado:
-Per sequence GC content - eventualmente pode ter noise no começo, sem problema.
-Sequence duplication levels - quanto maior percentual, melhor
-base N - quando a máqunia nao tem certeza de qual letra é, coloca um N, portanto, melhor que seja zero
+
+» Per base sequence quality - 
+» Per sequence quality scores - eventualmente pode ter noise no começo, sem problema.
+» Per base sequence content - é um dos indicadores mais importantes junto com o primeiro.
+» Per base N content - quando a máqunia nao tem certeza de qual letra é, coloca um N, portanto, melhor que seja zero.
+» Sequence Length Distribution
+» Sequence Duplication Levels - quanto maior percentual, melhor
+» Overrepresented sequences
+» Adapter Content - 
 
 
-#### trimmomatic
-Ele descarta regiões de qualidade pobre em nossa sequencia.
-Pipeline:
-escolher se é single ou par
-escolher opção sobre o que ele vai fazer "cut bases off the of the read, if belo a threshold quality (trailing)"
-minimum quality requirede to keep a base: 20	
-Done!!!
 
- 
+#### trimmomatic ou trim galore
+Eles descartam regiões de qualidade pobre em nossa sequencia.
 
+##### trimmomatic Pipeline:
+» escolher se é single ou par
+» escolher opção sobre o que ele vai fazer "cut bases off the of the read, if belo a threshold quality (trailing)"
+» minimum quality requirede to keep a base: 20	
+» Done!!!
+
+##### trim galore Pipeline:
+» escolher se é single ou par
+» Done
 
 
 ---
