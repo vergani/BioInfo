@@ -61,7 +61,9 @@ fastq -> sam -> bam -> cram
 
 ---
 
+### Sobre as ferramentas de tandem repeats:
 
+![image](https://github.com/vergani/BioInfo/assets/35334365/8a43286d-6dac-4264-9578-6f2d746e8041)
 
 ---
 
