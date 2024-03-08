@@ -1,8 +1,8 @@
 # Pipelines
 
-### Quality Assessment
+## Quality Assessment
 
-#### FastqC
+### FastqC
 Detalhes sobre resultado:
 
 - [x] #739
@@ -27,27 +27,27 @@ Detalhes sobre resultado:
 
 
 
-#### trimmomatic ou trim galore
+### trimmomatic ou trim galore
 Eles descartam regiões de qualidade pobre em nossa sequencia.
 
-##### trimmomatic Pipeline:
+#### trimmomatic Pipeline:
 » escolher se é single ou par
 » escolher opção sobre o que ele vai fazer "cut bases off the of the read, if belo a threshold quality (trailing)"
 » minimum quality requirede to keep a base: 20	
 » Done!!!
 
-##### trim galore Pipeline:
+#### trim galore Pipeline:
 » escolher se é single ou par
 » Trim low-quality ends from reads in addition to adapter removal (Enter phred quality score threshold): 20
 » Também é interessante gerar o relatório estatístico com informações adicionais.
 » Done
 
 
----
 
 
----
-### Galaxy workflow
+
+
+## Galaxy workflow
 
 https://www.ncbi.nlm.nih.gov/sra/?term=exome
 
