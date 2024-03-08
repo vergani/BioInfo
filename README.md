@@ -49,4 +49,22 @@ HISAT2 - ainda não testei no galaxy mas promete ser eficiente e rápido (acho q
     sudo apt install fastp 
 
 
+## Galaxy workflow
+
+https://www.ncbi.nlm.nih.gov/sra/?term=exome
+
+Access: publici
+
+Source: DNA
+
+Type: exome
+
+paired
+
+Plataform: 'optional'
+
+Anotar o "accession number" caso precise voltar novamente no mesmo exome.
+
+A coluna "run" tem um ID específico que serve para importar no galaxy (ex: SRR25306983)
+
 
