@@ -39,6 +39,7 @@ Eles descartam regiões de qualidade pobre em nossa sequencia.
 ##### trim galore Pipeline:
 » escolher se é single ou par
 » Trim low-quality ends from reads in addition to adapter removal (Enter phred quality score threshold): 20
+» Também é interessante gerar o relatório estatístico com informações adicionais.
 » Done
 
 
