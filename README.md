@@ -62,6 +62,30 @@ In summary, while sequence mapping focuses on aligning reads to a reference sequ
 ---
 
 
+### Quality Assessment
+
+#### FastqC
+Detalhes sobre resultado:
+Per sequence GC content - eventualmente pode ter noise no começo, sem problema.
+Sequence duplication levels - quanto maior percentual, melhor
+base N - quando a máqunia nao tem certeza de qual letra é, coloca um N, portanto, melhor que seja zero
+
+
+#### trimmomatic
+Ele descarta regiões de qualidade pobre em nossa sequencia.
+Pipeline:
+escolher se é single ou par
+escolher opção sobre o que ele vai fazer "cut bases off the of the read, if belo a threshold quality (trailing)"
+minimum quality requirede to keep a base: 20	
+Done!!!
+
+ 
+
+
+
+---
+
+
 ### VCF format
 
 The variant call format (VCF) is a generic format for storing DNA polymorphism data such as SNPs, insertions, deletions and structural variants, together with rich annotations. VCF is usually stored in a compressed manner and can be indexed for fast data retrieval of variants from a range of positions on the reference genome.
