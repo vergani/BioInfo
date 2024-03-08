@@ -8,16 +8,34 @@ Tools designed to target specific disease-associated repeat expansions, here are
 
 ---
 
+## ExpansionHunter
+Is a software tool designed for detecting and genotyping repetitive DNA expansions from high-throughput sequencing data. It is specifically developed for identifying expansions associated with various genetic disorders caused by repeat expansions, such as Huntington's disease, Fragile X syndrome, myotonic dystrophy, and other repeat expansion disorders.
+
 https://github.com/Illumina/ExpansionHunter/blob/master/docs/02_Installation.md
 
     ExpansionHunter --reads sample.cram --reference Homo_sapiens_assembly38.fasta  --variant-catalog variant_catalog-all.json  --output-prefix sample
     
-    GangSTR --bam sample.cram --ref Homo_sapiens_assembly38.fasta --regions hg19_ver13_1.bed --out sample
+        
     
+---
+
+
+## GangSTR 
+Is a tool for genome-wide profiling tandem repeats from short reads. A key advantage of GangSTR over lobSTR and HipSTR is that it can handle repeats that are longer than the read length. 
+
+    GangSTR --bam sample.cram --ref Homo_sapiens_assembly38.fasta --regions hg19_ver13_1.bed --out sample
+
+---
+
+
+## HipSTR
+HipSTR is a software tool developed for detecting and genotyping STR variations from whole-genome sequencing data. It employs a hidden Markov model (HMM) to accurately identify STR expansions and contractions, including those associated with diseases. HipSTR allows for the specification of target regions and can be applied to various disease contexts where STR expansions play a role.
+
     ./HipSTR --bams sample.cram --fasta Homo_sapiens_assembly38.fasta --regions hg38.hipstr_reference-X.bed --str-vcf str_calls.vcf.gz
 
 
 ---
+
 
 ## Stripy
 A software tool developed for analyzing short tandem repeat (STR) variation in human populations. STRiPY is designed to identify and genotype STR loci from high-throughput sequencing data, with a focus on STRs in the human genome.
