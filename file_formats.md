@@ -112,7 +112,7 @@ minimap2 -t <threads> -x <preset> reference_index reads_R1.fastq reads_R2.fastq 
 ```
 Depois de rodar o mapeamento, é interessante rodar um flagstat do samtools para ver percentual de mapeamento e também se há leituras duplicadas.
 
-Exemplo de saída do flagstat:
+Exemplo de saída do comando `samtools flagstat sample.cram`
 
     820180215 + 0 in total (QC-passed reads + QC-failed reads)
     818629760 + 0 primary
