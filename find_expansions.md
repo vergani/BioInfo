@@ -42,6 +42,9 @@ HipSTR is a software tool developed for detecting and genotyping STR variations 
 
 
 ## Stripy
+
+https://stripy.org/
+
 A software tool developed for analyzing short tandem repeat (STR) variation in human populations. STRiPY is designed to identify and genotype STR loci from high-throughput sequencing data, with a focus on STRs in the human genome.
 
 The main features of STRiPY include:
@@ -58,8 +61,6 @@ STRiPY is particularly useful for studying STR variation in human populations, u
 
 ### Instalando stripy:
 
-https://stripy.org/
-
     pip install regex
     pip install pysam
     pip install nump
@@ -71,6 +72,7 @@ https://stripy.org/
 ---
 
 ## TredParse
+
 [https://github.com/humanlongevity/tredparse/](https://github.com/humanlongevity/tredparse/)
 
 Depois de instalado direitinho:
