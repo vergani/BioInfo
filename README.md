@@ -21,14 +21,6 @@ https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sa
 https://storage.googleapis.com/gcp-public-data--broad-references/hg19/v0/Homo_sapiens_assembly19.fasta 
 
 
-
-
-## Tipos de variações genéticas
-
-![image](https://github.com/vergani/BioInfo/assets/35334365/ffa49df4-8c0c-46fa-9e6f-ec16c141e8ae)
-
-
-
 ## PIPELINE "IDEAL"?
 
 ![image](https://github.com/vergani/BioInfo/assets/35334365/828623b2-cd79-4064-89e9-3bd3fd9fb0f7)
