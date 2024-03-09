@@ -5,11 +5,11 @@ Detalhes sobre resultado:
 
 - Per base sequence quality - 
 - Per sequence quality scores - eventualmente pode ter noise no começo, sem problema.
-- Per base sequence content - é um dos indicadores mais importantes junto com o primeiro.
+- Per base sequence content - é um dos indicadores mais importantes junto com o primeiro. Mostra a proporção de cada base por posição.
 - Per base N content - quando a máqunia nao tem certeza de qual letra é, coloca um N, portanto, melhor que seja zero.
-- Sequence Length Distribution
-- Sequence Duplication Levels - quanto maior percentual, melhor
-- Overrepresented sequences
+- Sequence Length Distribution - illumina costuma gerar cumprimentos estáveis de sequenciamento. Uma pirâmide é esperada neste gráfico.
+- Sequence Duplication Levels - quanto maior percentual, melhor. Ideal que o pico do gráfico esteja sempre no lado esquerdo da imagem.
+- Overrepresented sequences - geralmente zerada. Sua existência pode indicar algum tipo de contaminação na amostra.
 - Adapter Content - 
 
 
