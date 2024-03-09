@@ -1,7 +1,23 @@
 # BioInfo
 
+Meu pipeline para WGS até o momento:
+
 > [!NOTE]
-> Useful information that users should know, even when skimming content.
+> Avaliar qualidade geral dos fastq obtidos via FastQC
+
+> [!NOTE]
+> Melhorar qualidade das leituras (opcional) via trimmomatic ou trim galore
+
+> [!NOTE]
+> Mapear e alinhar via bowtie2, minimap, bwa ou hisat2
+
+> [!NOTE]
+> Avaliar qualidade geral do mapeamento via QualiMap BamQC
+
+---
+
+
+
 
 > [!TIP]
 > Helpful advice for doing things better or more easily.
