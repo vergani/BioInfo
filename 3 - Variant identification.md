@@ -11,6 +11,8 @@ Input: CRAM or BAM
 Choose parameter selection level: 	full
 
 
+## bcftool mpileup
+
 
 ## Tipos de variações genéticas
 
