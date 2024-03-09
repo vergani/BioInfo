@@ -7,7 +7,7 @@ Detalhes sobre resultado:
 - [ ] https://github.com/octo-org/octo-repo/issues/740
 - [ ] Add delight to the experience when all tasks are complete :tada:
 
-`» Per base sequence quality` - 
+  » Per base sequence quality - 
 
 `» Per sequence quality scores` - eventualmente pode ter noise no começo, sem problema.
 
