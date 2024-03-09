@@ -2,7 +2,7 @@
 
 Meu pipeline para WGS até o momento:
 
-> 1 - FastQ Quality Control
+> ### 1 - FastQ Quality Control ###
 > 
 > Avaliar qualidade geral dos fastq obtidos via FastQC e trimar se necessário
 
