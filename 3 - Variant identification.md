@@ -14,6 +14,9 @@ Choose parameter selection level: 	full
 ## bcftool mpileup
 suposição: implesmente converte um BAM em um VCF file para depois usar num variant calling.
 em sequida, supostamente, basta rodar o bcftools call usando como input, o output do mpileup
+opções importantes:
+"variants only" = YES
+"output" = VCF
 
 
 ## Tipos de variações genéticas
