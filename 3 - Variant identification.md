@@ -27,7 +27,11 @@ exemplo de saída
 
 ![image](https://github.com/vergani/BioInfo/assets/35334365/0d20debf-6805-46b4-b427-41c65dd9b05a)
 
+importante: as vezes fica difícil distinguir uma variante verdadeira de um artefato trivial.
+por isso é importante filtrar para anlisar
 
+vfcf ilter
+podemos por exemplo usar o filtro de qualidade acima de 200, para eliminar aquelas com menor certeza.
 
 ## Tipos de variações genéticas
 
