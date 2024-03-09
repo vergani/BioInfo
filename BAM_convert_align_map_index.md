@@ -99,6 +99,9 @@ After this step, you can further compress, index, and sort the BAM file using SA
 
 
 ## SAM, BAM, CRAM Quality Control
+
+### samtools flagstat
+
 Depois de rodar o mapeamento, é interessante rodar um flagstat do samtools para ver percentual de mapeamento e também se há leituras duplicadas.
 
 Exemplo de saída do comando `samtools flagstat sample.cram`
@@ -125,4 +128,8 @@ Se o mapeamento ficar ruim, talves está usando um genoma de referência errado 
 
 Caso haja leituras duplicadas, podemos rodar um `MarkDuplicates`
 
+
+###  QualiMap BamQC 
+
+Evaluate the quality of aligned reads data in BAM format. The tool summarizes basic statistics of the alignment (number of reads, coverage, GC-content, etc.) and produces a number of useful graphs for their interpretation.
 
