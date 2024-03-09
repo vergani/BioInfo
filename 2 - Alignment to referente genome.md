@@ -1,20 +1,9 @@
-# File Formats
+# Alinhar, mapear, avaliar qualidade
 
 geralmente o fluxo no que diz respeito às extensões é:
 
 fastq -> sam -> bam -> cram
 
-
-
-## FASTQ
-
-FORMATO MAIS ANTIGO:
-
-![image](https://github.com/vergani/BioInfo/assets/35334365/1de3b9d6-3493-4d7c-afd7-6c132fe74d12)
-
-FORMATO MAIS RECENTE:
-
-![image](https://github.com/vergani/BioInfo/assets/35334365/33028957-208a-4638-a0ea-648f1b66a94f)
 
 ---
 
@@ -132,4 +121,7 @@ Caso haja leituras duplicadas, podemos rodar um `MarkDuplicates`
 ###  QualiMap BamQC 
 
 Evaluate the quality of aligned reads data in BAM format. The tool summarizes basic statistics of the alignment (number of reads, coverage, GC-content, etc.) and produces a number of useful graphs for their interpretation.
+
+checar esta ferramenta, nao sei se é a mesma
+http://qualimap.conesalab.org/
 
