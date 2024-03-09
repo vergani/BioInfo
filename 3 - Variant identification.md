@@ -18,6 +18,9 @@ opções importantes:
 "variants only" = YES
 "output" = VCF
 
+![image](https://github.com/vergani/BioInfo/assets/35334365/ce4f26fd-2da8-40fb-b1ee-6460e3005ae8)
+
+
 
 ## Tipos de variações genéticas
 
