@@ -22,7 +22,7 @@ Meu pipeline para WGS até o momento:
 > [!TIP]
 > Helpful advice for doing things better or more easily.
 
-> [!IMPO RTANT]
+> [!IMPORTANT] teste
 > Key information users need to know to achieve their goal.
 
 > [!WARNING]
