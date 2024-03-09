@@ -12,6 +12,7 @@ Choose parameter selection level: 	full
 
 
 ## bcftool mpileup
+suposição: implesmente converte um BAM em um VCF file para depois usar num variant calling.
 
 
 ## Tipos de variações genéticas
