@@ -20,6 +20,13 @@ opções importantes:
 
 ![image](https://github.com/vergani/BioInfo/assets/35334365/ce4f26fd-2da8-40fb-b1ee-6460e3005ae8)
 
+mas quantas variáveis de fato tenho nesta amostra e quais os tipos de variantes encontradas?
+
+vamos usar o bcftools counts
+exemplo de saída
+
+![image](https://github.com/vergani/BioInfo/assets/35334365/0d20debf-6805-46b4-b427-41c65dd9b05a)
+
 
 
 ## Tipos de variações genéticas
