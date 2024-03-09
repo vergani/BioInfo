@@ -88,6 +88,7 @@ onde samples é:
     t001,DRR253030-galaxy-BWA.bam,FXS
 
 então:
+
     $ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tredreport.py t001.json --tsv work.tsv
 
     $ sudo docker run -v `pwd`:`pwd` -w `pwd` humanlongevity/tredparse tredplot.py likelihood 001.json --tred HD
