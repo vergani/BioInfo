@@ -8,8 +8,7 @@ Detalhes sobre resultado:
 - [ ] Add delight to the experience when all tasks are complete :tada:
 
   » Per base sequence quality - 
-
-`» Per sequence quality scores` - eventualmente pode ter noise no começo, sem problema.
+  » Per sequence quality scores - eventualmente pode ter noise no começo, sem problema.
 
 `» Per base sequence content ` - é um dos indicadores mais importantes junto com o primeiro.
 
