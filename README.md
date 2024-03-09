@@ -60,3 +60,9 @@ Anotar o "accession number" caso precise voltar novamente no mesmo exome.
 A coluna "run" tem um ID específico que serve para importar no galaxy (ex: SRR25306983)
 
 
+Próximos passos:
+- [x] Lorem ipsum
+- [ ] Lorem ipsum
+- [ ] Lorem ipsum
+
+
