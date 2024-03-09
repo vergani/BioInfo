@@ -2,17 +2,17 @@
 
 Meu pipeline para WGS até o momento:
 
-> [!NOTE]
-> Avaliar qualidade geral dos fastq obtidos via FastQC
+> [!1 - FastQ Quality Control]
+> Avaliar qualidade geral dos fastq obtidos via FastQC e trimar se necessário
 
-> [!NOTE]
-> Melhorar qualidade das leituras (opcional) via trimmomatic ou trim galore
+> [!2 - Alignment to referente genome]
+> Mapear e alinhar via bowtie2, minimap, bwa ou hisat2 e checar a qualidade do alinhamento
 
-> [!NOTE]
-> Mapear e alinhar via bowtie2, minimap, bwa ou hisat2
+> [!3 - Variant identification]
+> Single nucleotide variants (SNVs), indels, etc. Freebayes, SAMTools etc
 
-> [!NOTE]
-> Avaliar qualidade geral do mapeamento via QualiMap BamQC
+> [!4 - Annotation]
+> Comparison to public database (dbsnp, 1000 genomes; functional consequences scores
 
 ---
 
