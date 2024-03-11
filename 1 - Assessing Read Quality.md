@@ -92,6 +92,43 @@ Resultado:
 
 
 
+Outro comando intessantes para avaliar insformações de fastq:
+    
+    $ fastp -i SRR19649475_1.fastq.gz
+    Detecting adapter sequence for read1...
+    >Illumina TruSeq Adapter Read 1
+    AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+    
+    Read1 before filtering:
+    total reads: 12706540
+    total bases: 1283360540
+    Q20 bases: 1262248634(98.355%)
+    Q30 bases: 1218638999(94.9569%)
+    
+    Read1 after filtering:
+    total reads: 12700783
+    total bases: 1281460717
+    Q20 bases: 1260635731(98.3749%)
+    Q30 bases: 1217156265(94.9819%)
+    
+    Filtering result:
+    reads passed filter: 12700783
+    reads failed due to low quality: 5446
+    reads failed due to too many N: 0
+    reads failed due to too short: 311
+    reads with adapter trimmed: 87900
+    bases trimmed due to adapters: 1342496
+    
+    Duplication rate (may be overestimated since this is SE data): 41.6776%
+    
+    JSON report: fastp.json
+    HTML report: fastp.html
+    
+    fastp -i SRR19649475_1.fastq.gz 
+    fastp v0.20.1, time used: 29 seconds
+
+
+
 
 
 
