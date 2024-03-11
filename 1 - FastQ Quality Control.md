@@ -3,7 +3,9 @@
 
 > [!TIP]
 > This lesson assumes a working understanding of the bash shell.
+> 
 > This lesson also assumes some familiarity with biological concepts.
+> 
 > This lesson uses algum tipo de arquivos de fastq.....
 
 
@@ -22,9 +24,6 @@ FORMATO MAIS RECENTE:
 
 ## 
 
-Prerequisites
-
-
 
 Temos dois cabras:
 
@@ -32,6 +31,7 @@ Temos dois cabras:
     -rw-rw-r-- 1 bioinfo bioinfo 655690082 mar 11 11:54 SRR19649475_1.fastq.gz
     -rw-rw-r-- 1 bioinfo bioinfo 677597797 mar 11 11:01 SRR19649475_2.fastq.gz
 
+Rodando:
 
     $ fastqc *.fastq*
     Started analysis of SRR19649475_1.fastq.gz
@@ -77,6 +77,7 @@ Temos dois cabras:
     Approx 95% complete for SRR19649475_2.fastq.gz
     Analysis complete for SRR19649475_2.fastq.gz
     
+Resultado:
 
     $ ls -l
     -rw-rw-r-- 1 bioinfo bioinfo    628995 mar 11 11:58 SRR19649475_1_fastqc.html
