@@ -1,5 +1,9 @@
 # Alinhar, mapear, avaliar qualidade
 
+## Index the reference genome
+
+Our first step is to index the reference genome for use by BWA. Indexing allows the aligner to quickly find potential alignment sites for query sequences in a genome, which saves time during alignment. Indexing the reference only has to be run once. The only reason you would want to create a new index is if you are working with a different reference genome or you are using a different tool for alignment.
+
 Baixar referência HG38:
     
     wget https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta
@@ -7,6 +11,32 @@ Baixar referência HG38:
 Criar índice da referencia, passo necessário para usar BWA:
 
     bwa index Homo_sapiens_assembly38.fasta
+
+Resultado será mais ou menos este:
+
+$ bwa index Homo_sapiens_assembly38.fasta
+[bwa_index] Pack FASTA... 13.44 sec
+[bwa_index] Construct BWT for the packed sequence...
+[BWTIncCreate] textLength=6434693834, availableWord=464768632
+[bwt_gen] Finished constructing BWT in 711 iterations.
+[bwa_index] 2925.75 seconds elapse.
+[bwa_index] Update BWT... 19.02 sec
+[bwa_index] Pack forward-only FASTA... 8.25 sec
+[bwa_index] Construct SA from BWT and Occ... 
+
+
+
+
+
+## Align reads to reference genome
+
+The alignment process consists of choosing an appropriate reference genome to map our reads against and then deciding on an aligner. We will use the BWA-MEM algorithm, which is the latest and is generally recommended for high-quality queries as it is faster and more accurate.
+
+An example of what a bwa command looks like is below. Neste caso estou usando dois arquivos fastq Paired_end usando o genoma de referência HG38:
+
+
+
+    
 
 
 ## SAM file format (sequence alignment map)
