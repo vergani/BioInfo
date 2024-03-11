@@ -67,6 +67,14 @@ STRiPY is particularly useful for studying STR variation in human populations, u
     pip install numpy
     sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0 gir1.2-webkit2-4.1
 
+Se erro a seguir:
+
+    /home/bioinfo/miniconda3/lib/python3.12/site-packages/../../libstdc++.so.6: version `GLIBCXX_3.4.30' not found (required by /lib/x86_64-linux-gnu/libjavascriptcoregtk-4.1.so.0)
+    
+Basta então ajustar:
+
+    ln -sf /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /home/anavani/anaconda3/envs/dmcgb/bin/../lib/libstdc++.so.6
+
 
 
 
