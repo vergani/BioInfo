@@ -14,15 +14,15 @@ Criar índice da referencia, passo necessário para usar BWA:
 
 Resultado será mais ou menos este:
 
-$ bwa index Homo_sapiens_assembly38.fasta
-[bwa_index] Pack FASTA... 13.44 sec
-[bwa_index] Construct BWT for the packed sequence...
-[BWTIncCreate] textLength=6434693834, availableWord=464768632
-[bwt_gen] Finished constructing BWT in 711 iterations.
-[bwa_index] 2925.75 seconds elapse.
-[bwa_index] Update BWT... 19.02 sec
-[bwa_index] Pack forward-only FASTA... 8.25 sec
-[bwa_index] Construct SA from BWT and Occ... 
+    $ bwa index Homo_sapiens_assembly38.fasta
+    [bwa_index] Pack FASTA... 13.44 sec
+    [bwa_index] Construct BWT for the packed sequence...
+    [BWTIncCreate] textLength=6434693834, availableWord=464768632
+    [bwt_gen] Finished constructing BWT in 711 iterations.
+    [bwa_index] 2925.75 seconds elapse.
+    [bwa_index] Update BWT... 19.02 sec
+    [bwa_index] Pack forward-only FASTA... 8.25 sec
+    [bwa_index] Construct SA from BWT and Occ... 
 
 
 
