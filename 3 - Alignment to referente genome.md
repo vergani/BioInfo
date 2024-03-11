@@ -1,11 +1,13 @@
 # Alinhar, mapear, avaliar qualidade
 
-geralmente o fluxo no que diz respeito às extensões é:
+Baixar referência HG38:
+    
+    wget https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta
 
-fastq -> sam -> bam -> cram
+Criar índice da referencia, passo necessário para usar BWA:
 
+    bwa index Homo_sapiens_assembly38.fasta
 
----
 
 ## SAM file format (sequence alignment map)
 » Texto plano (humam readable)
