@@ -26,6 +26,31 @@ Resultado será mais ou menos este:
 
 
 
+posso agora verificar a qualidade do alinhamento feito via samtools:
+
+    $ samtools flagstat Galaxy8-Map_with_BWA-MEM.bam
+
+Saída será algo parecido com isso:
+
+    28268658 + 0 in total (QC-passed reads + QC-failed reads)
+    25413080 + 0 primary
+    0 + 0 secondary
+    2855578 + 0 supplementary
+    0 + 0 duplicates
+    0 + 0 primary duplicates
+    28219395 + 0 mapped (99.83% : N/A)
+    25363817 + 0 primary mapped (99.81% : N/A)
+    25413080 + 0 paired in sequencing
+    12706540 + 0 read1
+    12706540 + 0 read2
+    20430572 + 0 properly paired (80.39% : N/A)
+    25323736 + 0 with itself and mate mapped
+    40081 + 0 singletons (0.16% : N/A)
+    875302 + 0 with mate mapped to a different chr
+    560102 + 0 with mate mapped to a different chr (mapQ>=5)
+
+
+
 
 
 ## Align reads to reference genome
