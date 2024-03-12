@@ -92,7 +92,8 @@ Também posso baixar os índices prontos para usar no bowtie2:
 
 ---
 
-## HISAT2 (não testei isso especificamente)
+## HISAT2
+
 A fast and sensitive alignment program
 Aqui já vamos faze ro esquema de alinhar com os genes do arquivo GTF para a referencia:
   Selecionar fastq
@@ -103,9 +104,18 @@ gerar um índice para o genoma de referencia:
 
     $ hisat2-build Homo_sapiens_assembly38.fasta Homo_sapiens_assembly38_hisat2
 
+alternativamente, posso baixar os índices prontos aqui:
+http://daehwankimlab.github.io/hisat2/download/
+
 sintaxe alinhamento de dois fastq paired-end:
 
     $ hisat2 -x <index_prefix> -1 <read1.fastq> -2 <read2.fastq> -S <output.sam> 2> mapping_summary.txt
+
+obs: "index_prefix" é o índice do genoma usado sem extensão no final do nome.
+
+Ao abrir o arquivo mapping_summary.txt teremos um resumo interessante sobre nosso mapeamento:
+
+
 
 
 agora vamos usar o `htseq` para ver o número de leituras de um gene em particulas naquele exoma
