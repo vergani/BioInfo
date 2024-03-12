@@ -75,3 +75,57 @@ Próximos passos:
 
 
 
+###  mais alguns rascunhos
+## Convertendo, alinhando, mapeando e indexando
+
+checar info interessante sobre CRAM ou BAM (se foi alinhado com HG38 ou HG19 por exemplo):
+
+    samtools view -H sample.BAM/CRAM
+
+Para criar índice usando bowtie2:
+
+    bowtie2-build Homo_sapiens_assembly38.fasta Homo_sapiens_assembly38_bowtie2
+
+Também posso baixar os índices prontos para usar no bowtie2:
+
+    https://benlangmead.github.io/aws-indexes/bowtie
+
+---
+
+## HISAT2 (não testei isso especificamente)
+A fast and sensitive alignment program
+Aqui já vamos faze ro esquema de alinhar com os genes do arquivo GTF para a referencia:
+  Selecionar fastq
+  Print alignment summary to a file.
+  Spliced alignment options (selecionar GTF do genoma de referência)
+
+agora vamos usar o `htseq` para ver o número de leituras de um gene em particulas naquele exoma
+
+---
+
+Para converter dois paired end fastq para sam e depois bam:
+
+  bowtie2 -p 7 -x grch38_1kgmaj/grch38_1kgmaj -1 NG1P_1.fq.gz -2 NG1P_2.fq.gz -S NG-Vi-bowtie2-hg38.sam
+
+
+Se for um single end (usar opção -U):
+
+    bowtie2 -p 7 -x grch38_1kgmaj/grch38_1kgmaj -U DRR253030.fastq.gz -S DRR253030_bwt_hg38.sam
+    samtools view -b DRR253030_bwt_hg38.sam -o DRR_bwt_hg38_sam.bam
+
+After this step, you can further compress, index, and sort the BAM file using SAMtools:
+
+    samtools sort alignment.bam -o alignment_sorted.bam
+    samtools index alignment_sorted.bam
+
+    minimap2 -t <threads> -x <preset> reference_index reads_R1.fastq reads_R2.fastq > alignment.sam
+
+
+###  QualiMap BamQC 
+
+Evaluate the quality of aligned reads data in BAM format. The tool summarizes basic statistics of the alignment (number of reads, coverage, GC-content, etc.) and produces a number of useful graphs for their interpretation.
+
+checar esta ferramenta, nao sei se é a mesma
+http://qualimap.conesalab.org/
+
+
