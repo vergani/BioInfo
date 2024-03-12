@@ -49,6 +49,7 @@ Um exemplo do bwa está abaixo. Neste caso estou usando dois arquivos fastq Pair
 
     $ hisat2 -x genome -1 SRR19649475_1.fastq.gz -2 SRR19649475_2.fastq.gz -S SRR19649475_hisat2.sam 2> hisat2_mapping_summary.txt
 
+Ao abrir o arquivo mapping_summary.txt teremos um resumo interessante sobre nosso mapeamento:
 
 
 ## SAM file format
