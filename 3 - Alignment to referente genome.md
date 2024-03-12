@@ -45,20 +45,17 @@ Um exemplo do bwa está abaixo. Neste caso estou usando dois arquivos fastq Pair
 
 ## SAM file format
 
-The SAM file, is a tab-delimited text file that contains information for each individual read and its alignment to the genome. While we do not have time to go into detail about the features of the SAM format, the paper by Heng Li et al. provides a lot more detail on the specification.
+O arquivo SAM é um arquivo de texto delimitado por tabulações que contém informações para cada leitura individual e seu alinhamento com o genoma. 
 
-The file begins with a header, which is optional. The header is used to describe the source of data, reference sequence, method of alignment, etc., this will change depending on the aligner being used. Following the header is the alignment section. Each line that follows corresponds to alignment information for a single read. Each alignment line has 11 mandatory fields for essential mapping information and a variable number of other fields for aligner specific information. An example entry from a SAM file is displayed below with the different fields highlighted.
+O arquivo começa com um cabeçalho, que é opcional. O cabeçalho é usado para descrever a fonte de dados, sequência de referência, método de alinhamento, etc., isso mudará dependendo do alinhador usado. 
+Seguindo o cabeçalho está a seção de alinhamento. Cada linha a seguir corresponde às informações de alinhamento para uma única leitura. Cada linha de alinhamento possui 11 campos obrigatórios para informações essenciais de mapeamento e um número variável de outros campos para informações específicas do alinhador. 
 
-» Texto plano (humam readable)
-» Contém: Qualit Scores, Sequence Info (fastq) + Alignment Info + MetaData
-
-HEADER: contém metadata (sequence dictionary, read group definitions, etc)
-RECORDS:  containing structured read information (1 line per read record)
+Um exemplo de entrada de um arquivo SAM é exibido abaixo com os diferentes campos destacados.
 
 ![image](https://github.com/vergani/BioInfo/assets/35334365/d04ac79e-b690-4eb2-bf3c-44e2e329b2de)
 
-
 ![image](https://github.com/vergani/BioInfo/assets/35334365/1d22f2ad-54a6-495c-8162-aabb442810ed)
+
 
 
 ## BAM file format
