@@ -63,9 +63,9 @@ Saída será algo parecido com isso:
 
 > [!TIP]
 > Ao alinhar amostras de WGS, é possível que os 23% não mapeados com sucesso, se referem a região "non-coding".
-
+>
 > Se o mapeamento ficar ruim, talves está usando um genoma de referência errado ou o fastq do passo anterior não foi bem trimado.
-
+>
 > Caso haja leituras duplicadas, podemos rodar um `MarkDuplicates`
 
     
