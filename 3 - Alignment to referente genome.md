@@ -86,15 +86,15 @@ Um exemplo de entrada de um arquivo SAM é exibido abaixo com os diferentes camp
 > [!TIP]
 > Uma vez superada a etapa de mapeamento das reads, vamos converter nosso SAM para BAM.
 
-The compressed binary version of SAM is called a BAM file. We use this version to reduce size and to allow for indexing, which enables efficient random access of the data contained within the file.
+A versão binária compactada do SAM é chamada de arquivo BAM. Usamos esta versão para reduzir o tamanho e permitir a indexação, o que permite acesso aleatório eficiente aos dados contidos no arquivo.
 
-We will convert the SAM file to BAM format using the samtools program with the view command and tell this command that the input is in SAM format (-S) and to output BAM format (-b):
+Converteremos o arquivo SAM para o formato BAM usando o programa samtools com o comando view e informaremos a este comando que a entrada está no formato SAM (-S) e a saída está no formato BAM (-b):
 
-    samtools view -S -b sample.sam > sample.bam
+    $ samtools view -S -b sample.sam > sample.bam
 
 Next we sort the BAM file using the sort command from samtools. -o tells the command where to write the output.
 
-    samtools sort -o sample_sorted.bam samlpe.bam 
+    $ samtools sort -o sample_sorted.bam samlpe.bam 
 
 SAM/BAM files can be sorted in multiple ways, e.g. by location of alignment on the chromosome, by read name, etc. It is important to be aware that different alignment tools will output differently sorted SAM/BAM, and different downstream tools require differently sorted alignment files as input.
 
