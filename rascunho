@@ -99,8 +99,9 @@ Aqui já vamos faze ro esquema de alinhar com os genes do arquivo GTF para a ref
   Print alignment summary to a file.
   Spliced alignment options (selecionar GTF do genoma de referência)
 
-baixar aqui as referencias:
-http://daehwankimlab.github.io/hisat2/download/
+gerar um índice para o genoma de referencia:
+
+    $ hisat2-build Homo_sapiens_assembly38.fasta Homo_sapiens_assembly38_hisat2
 
 sintaxe alinhamento de dois fastq paired-end:
 
