@@ -1,51 +1,61 @@
-# Alinhar, mapear, avaliar qualidade
+# 3 - Alinhar, mapear, avaliar qualidade
 
 > [!TIP]
 > Neste ponto, você já fez o controle de qualidade das amostras e trimou (se necessário).
 
-## Index the reference genome
+## 3.1 Index the reference genome
 
-Nosso primeiro passo é indexar o genoma de referência para uso do BWA. 
+Nosso primeiro passo é indexar o genoma de referência para usando a ferramenta desejada. 
+
+### Baixar referência HG38:
+    
+    wget https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta
+
+
+### Indexar arquivo de referências genômica
+
+Algumas ferramentas necessitam indexar o arquivos de referência.
 A indexação permite que o alinhador encontre rapidamente possíveis locais de alinhamento para sequências de consulta em um genoma, o que economiza tempo durante o alinhamento. 
 A indexação da referência só precisa ser executada uma vez. 
 A única razão pela qual você deve criar um novo índice é se estiver trabalhando com um genoma de referência diferente ou se estiver usando uma ferramenta diferente para alinhamento.
 
-Baixar referência HG38:
-    
-    wget https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta
+- BWA
 
 Criar índice da referencia, passo necessário para usar BWA:
 
-    bwa index Homo_sapiens_assembly38.fasta
+    $ bwa index Homo_sapiens_assembly38.fasta
 
-Resultado será mais ou menos este:
+- HISAT2
 
-    [bwa_index] Pack FASTA... 0.04 sec
-    [bwa_index] Construct BWT for the packed sequence...
-    [bwa_index] 1.05 seconds elapse.
-    [bwa_index] Update BWT... 0.03 sec
-    [bwa_index] Pack forward-only FASTA... 0.02 sec
-    [bwa_index] Construct SA from BWT and Occ... 0.57 sec
-    [main] Version: 0.7.17-r1188
-    [main] CMD: bwa index Homo_sapiens_assembly38
-    [main] Real time: 1.765 sec; CPU: 1.715 sec
+    $ hisat2-build Homo_sapiens_assembly38.fasta Homo_sapiens_assembly38_hisat2
 
 
 
 ## Align reads to reference genome
 
+Uma vez criado o índíce, vamos alinhar nossas reads.
+
 O processo de alinhamento consiste em escolher um genoma de referência apropriado para mapear nossas leituras e então decidir sobre um alinhador. 
-Usaremos o algoritmo BWA-MEM, que é o mais recente e geralmente recomendado para consultas de alta qualidade, pois é mais rápido e preciso.
-Um exemplo do bwa está abaixo. Neste caso estou usando dois arquivos fastq Paired_end usando o genoma de referência HG38:
 
-    bwa mem Homo_sapiens_assembly38.fasta SRR19649475_1.fastq.gz SRR19649475_2.fastq.gz > SRR196494.sam
+- BWA
 
+Um exemplo do bwa está abaixo. Neste caso estou usando dois arquivos fastq Paired_end usando o genoma de referência HG38, devidamente indexado:
+
+    $ bwa mem Homo_sapiens_assembly38.fasta SRR19649475_1.fastq.gz SRR19649475_2.fastq.gz > SRR196494.sam
+
+- HISAT2
+
+Um exemplo do bwa está abaixo. Neste caso estou usando dois arquivos fastq Paired_end usando o genoma de referência HG38, devidamente indexado:
+
+    $ hisat2 -x genome -1 SRR19649475_1.fastq.gz -2 SRR19649475_2.fastq.gz -S SRR19649475_hisat2.sam 2> hisat2_mapping_summary.txt
 
 
 
 ## SAM file format
 
 O arquivo SAM é um arquivo de texto delimitado por tabulações que contém informações para cada leitura individual e seu alinhamento com o genoma. 
+
+Basicamente é o resultado do alinhamento que executamos na seção anterior.
 
 O arquivo começa com um cabeçalho, que é opcional. O cabeçalho é usado para descrever a fonte de dados, sequência de referência, método de alinhamento, etc., isso mudará dependendo do alinhador usado. 
 Seguindo o cabeçalho está a seção de alinhamento. Cada linha a seguir corresponde às informações de alinhamento para uma única leitura. Cada linha de alinhamento possui 11 campos obrigatórios para informações essenciais de mapeamento e um número variável de outros campos para informações específicas do alinhador. 
