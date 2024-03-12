@@ -105,7 +105,7 @@ Saída será algo parecido com isso:
 
 
 
-
+###  A PARTIR DAQUI SÃO RASCUNHOS...
 ## Convertendo, alinhando, mapeando e indexando
 
 Checar algumas info interessantes sobre o fastq:
@@ -127,7 +127,7 @@ Também posso baixar os índices prontos para usar no bowtie2:
 
     https://benlangmead.github.io/aws-indexes/bowtie
 
-
+---
 
 ## HISAT2 (não testei isso especificamente)
 A fast and sensitive alignment program
@@ -137,7 +137,6 @@ Aqui já vamos faze ro esquema de alinhar com os genes do arquivo GTF para a ref
   Spliced alignment options (selecionar GTF do genoma de referência)
 
 agora vamos usar o `htseq` para ver o número de leituras de um gene em particulas naquele exoma
-
 
 ---
 
@@ -157,13 +156,6 @@ After this step, you can further compress, index, and sort the BAM file using SA
     samtools index alignment_sorted.bam
 
     minimap2 -t <threads> -x <preset> reference_index reads_R1.fastq reads_R2.fastq > alignment.sam
-
-
-
-## SAM, BAM, CRAM Quality Control
-
-
-
 
 
 ###  QualiMap BamQC 
