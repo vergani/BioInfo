@@ -67,7 +67,12 @@ An example of what a bwa command looks like is below. Neste caso estou usando do
     
 
 
-## SAM file format (sequence alignment map)
+## SAM/BAM file format
+
+The SAM file, is a tab-delimited text file that contains information for each individual read and its alignment to the genome. While we do not have time to go into detail about the features of the SAM format, the paper by Heng Li et al. provides a lot more detail on the specification.
+
+The file begins with a header, which is optional. The header is used to describe the source of data, reference sequence, method of alignment, etc., this will change depending on the aligner being used. Following the header is the alignment section. Each line that follows corresponds to alignment information for a single read. Each alignment line has 11 mandatory fields for essential mapping information and a variable number of other fields for aligner specific information. An example entry from a SAM file is displayed below with the different fields highlighted.
+
 » Texto plano (humam readable)
 » Contém: Qualit Scores, Sequence Info (fastq) + Alignment Info + MetaData
 
@@ -78,6 +83,9 @@ RECORDS:  containing structured read information (1 line per read record)
 
 
 ![image](https://github.com/vergani/BioInfo/assets/35334365/1d22f2ad-54a6-495c-8162-aabb442810ed)
+
+
+The compressed binary version of SAM is called a BAM file. We use this version to reduce size and to allow for indexing, which enables efficient random access of the data contained within the file.
 
 
 
