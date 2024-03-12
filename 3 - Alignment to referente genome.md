@@ -52,6 +52,18 @@ Um exemplo do bwa está abaixo. Neste caso estou usando dois arquivos fastq Pair
 Ao abrir o arquivo mapping_summary.txt teremos um resumo interessante sobre nosso mapeamento:
 
 
+
+
+Também é possível perceber que nosso arquivo SAM é muito maior que as reads originais:
+
+    $ ls -ltr -h *.gz *.sam
+    -rw-rw-r-- 1 bioinfo bioinfo 647M mar 11 11:01 SRR19649475_2.fastq.gz
+    -rw-rw-r-- 1 bioinfo bioinfo 626M mar 11 11:54 SRR19649475_1.fastq.gz
+    -rw-rw-r-- 1 bioinfo bioinfo 3,4G mar 12 12:01 SRR19649475_hisat2.sam
+
+Veremos como melhorar isso nos passos que seguem.
+
+
 ## SAM file format
 
 O arquivo SAM é um arquivo de texto delimitado por tabulações que contém informações para cada leitura individual e seu alinhamento com o genoma. 
