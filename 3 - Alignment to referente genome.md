@@ -37,40 +37,6 @@ An example of what a bwa command looks like is below. Neste caso estou usando do
 
 
 
-
-posso agora verificar a qualidade do alinhamento feito via samtools:
-
-    $ samtools flagstat Galaxy8-Map_with_BWA-MEM.bam
-
-Saída será algo parecido com isso:
-
-    28268658 + 0 in total (QC-passed reads + QC-failed reads)
-    25413080 + 0 primary
-    0 + 0 secondary
-    2855578 + 0 supplementary
-    0 + 0 duplicates
-    0 + 0 primary duplicates
-    28219395 + 0 mapped (99.83% : N/A)
-    25363817 + 0 primary mapped (99.81% : N/A)
-    25413080 + 0 paired in sequencing
-    12706540 + 0 read1
-    12706540 + 0 read2
-    20430572 + 0 properly paired (80.39% : N/A)
-    25323736 + 0 with itself and mate mapped
-    40081 + 0 singletons (0.16% : N/A)
-    875302 + 0 with mate mapped to a different chr
-    560102 + 0 with mate mapped to a different chr (mapQ>=5)
-
-> [!TIP]
-> Ao alinhar amostras de WGS, é possível que os 23% não mapeados com sucesso, se referem a região "non-coding".
->
-> Se o mapeamento ficar ruim, talves está usando um genoma de referência errado ou o fastq do passo anterior não foi bem trimado.
->
-> Caso haja leituras duplicadas, podemos rodar um `MarkDuplicates`
-
-    
-
-
 ## SAM file format
 
 The SAM file, is a tab-delimited text file that contains information for each individual read and its alignment to the genome. While we do not have time to go into detail about the features of the SAM format, the paper by Heng Li et al. provides a lot more detail on the specification.
@@ -93,7 +59,47 @@ RECORDS:  containing structured read information (1 line per read record)
 
 The compressed binary version of SAM is called a BAM file. We use this version to reduce size and to allow for indexing, which enables efficient random access of the data contained within the file.
 
+We will convert the SAM file to BAM format using the samtools program with the view command and tell this command that the input is in SAM format (-S) and to output BAM format (-b):
 
+    samtools view -S -b sample.sam > sample.bam
+
+Next we sort the BAM file using the sort command from samtools. -o tells the command where to write the output.
+
+    samtools sort -o sample_sorted.bam samlpe.bam 
+
+SAM/BAM files can be sorted in multiple ways, e.g. by location of alignment on the chromosome, by read name, etc. It is important to be aware that different alignment tools will output differently sorted SAM/BAM, and different downstream tools require differently sorted alignment files as input.
+
+You can use samtools to learn more about this bam file as well.
+posso agora verificar a qualidade do alinhamento feito via samtools:
+
+    $ samtools flagstat sample_sorted.bam
+
+Saída será algo parecido com isso:
+
+    28268658 + 0 in total (QC-passed reads + QC-failed reads)
+    25413080 + 0 primary
+    0 + 0 secondary
+    2855578 + 0 supplementary
+    0 + 0 duplicates
+    0 + 0 primary duplicates
+    28219395 + 0 mapped (99.83% : N/A)
+    25363817 + 0 primary mapped (99.81% : N/A)
+    25413080 + 0 paired in sequencing
+    12706540 + 0 read1
+    12706540 + 0 read2
+    20430572 + 0 properly paired (80.39% : N/A)
+    25323736 + 0 with itself and mate mapped
+    40081 + 0 singletons (0.16% : N/A)
+    875302 + 0 with mate mapped to a different chr
+    560102 + 0 with mate mapped to a different chr (mapQ>=5)
+
+
+> [!TIP]
+> Ao alinhar amostras de WGS, é possível que os 23% não mapeados com sucesso, se referem a região "non-coding".
+>
+> Se o mapeamento ficar ruim, talves está usando um genoma de referência errado ou o fastq do passo anterior não foi bem trimado.
+>
+> Caso haja leituras duplicadas, podemos rodar um `MarkDuplicates`
 
 
 
