@@ -60,6 +60,9 @@ Um exemplo de entrada de um arquivo SAM é exibido abaixo com os diferentes camp
 
 ## BAM file format
 
+> [!TIP]
+> Uma vez superada a etapa de mapeamento das reads, vamos converter nosso SAM para BAM.
+
 The compressed binary version of SAM is called a BAM file. We use this version to reduce size and to allow for indexing, which enables efficient random access of the data contained within the file.
 
 We will convert the SAM file to BAM format using the samtools program with the view command and tell this command that the input is in SAM format (-S) and to output BAM format (-b):
