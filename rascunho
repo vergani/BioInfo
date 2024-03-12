@@ -111,7 +111,10 @@ sintaxe alinhamento de dois fastq paired-end:
 
     $ hisat2 -x <index_prefix> -1 <read1.fastq> -2 <read2.fastq> -S <output.sam> 2> mapping_summary.txt
 
-obs: "index_prefix" é o índice do genoma usado sem extensão no final do nome.
+obs: "index_prefix" é o índice do genoma usado sem extensão no final do nome. Exemlo de comando:
+
+    $ hisat2 -x genome -1 SRR19649475_1.fastq.gz -2 SRR19649475_2.fastq.gz -S SRR19649475_hisat2.sam 2> hisat2_mapping_summary.txt
+
 
 Ao abrir o arquivo mapping_summary.txt teremos um resumo interessante sobre nosso mapeamento:
 
