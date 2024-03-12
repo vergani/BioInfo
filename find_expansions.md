@@ -1,5 +1,14 @@
 # File Expansion (STRs)
 
+Specific STR expanions podem ser patgênicas
+STR expansions são a base genética para uma grande range de desordens neurológicas:
+HTT
+FRMR1
+ALS (c9orf72)
+Atualmente cerca de 40 doenças neurológicas causadas por quase 40 STR genes.
+
+
+
 Tools designed to target specific disease-associated repeat expansions, here are a few options:
 
 ## Sumário que algumas ferramentas:
