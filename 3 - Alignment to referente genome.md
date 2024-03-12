@@ -122,7 +122,7 @@ posso agora verificar a qualidade do alinhamento feito via samtools:
 
     $ samtools flagstat sample_sorted.bam
 
-Saída será algo parecido com isso:
+This will give you the following statistics about your sorted bam file:
 
     28268658 + 0 in total (QC-passed reads + QC-failed reads)
     25413080 + 0 primary
