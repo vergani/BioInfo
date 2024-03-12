@@ -106,7 +106,8 @@ A versão binária compactada do SAM é chamada de arquivo BAM. Usamos esta vers
 
 Converteremos o arquivo SAM para o formato BAM usando o programa samtools com o comando view e informaremos a este comando que a entrada está no formato SAM (-S) e a saída está no formato BAM (-b):
 
-    $ samtools view -S -b sample.sam > sample.bam
+    $ samtools view -S -b SRR19649475_hisat2.sam > SRR19649475_hisat2.bam
+    
 
 Next we sort the BAM file using the sort command from samtools. -o tells the command where to write the output.
 
