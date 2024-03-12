@@ -5,7 +5,10 @@
 
 ## Index the reference genome
 
-Our first step is to index the reference genome for use by BWA. Indexing allows the aligner to quickly find potential alignment sites for query sequences in a genome, which saves time during alignment. Indexing the reference only has to be run once. The only reason you would want to create a new index is if you are working with a different reference genome or you are using a different tool for alignment.
+Nosso primeiro passo é indexar o genoma de referência para uso do BWA. 
+A indexação permite que o alinhador encontre rapidamente possíveis locais de alinhamento para sequências de consulta em um genoma, o que economiza tempo durante o alinhamento. 
+A indexação da referência só precisa ser executada uma vez. 
+A única razão pela qual você deve criar um novo índice é se estiver trabalhando com um genoma de referência diferente ou se estiver usando uma ferramenta diferente para alinhamento.
 
 Baixar referência HG38:
     
@@ -34,6 +37,13 @@ Resultado será mais ou menos este:
 The alignment process consists of choosing an appropriate reference genome to map our reads against and then deciding on an aligner. We will use the BWA-MEM algorithm, which is the latest and is generally recommended for high-quality queries as it is faster and more accurate.
 
 An example of what a bwa command looks like is below. Neste caso estou usando dois arquivos fastq Paired_end usando o genoma de referência HG38:
+
+O processo de alinhamento consiste em escolher um genoma de referência apropriado para mapear nossas leituras e então decidir sobre um alinhador. 
+Usaremos o algoritmo BWA-MEM, que é o mais recente e geralmente recomendado para consultas de alta qualidade, pois é mais rápido e preciso.
+Um exemplo do bwa está abaixo. Neste caso estou usando dois arquivos fastq Paired_end usando o genoma de referência HG38:
+
+    bwa mem Homo_sapiens_assembly38.fasta SRR19649475_1.fastq.gz SRR19649475_2.fastq.gz > SRR196494.sam
+
 
 
 
