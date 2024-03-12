@@ -51,6 +51,22 @@ Um exemplo do bwa está abaixo. Neste caso estou usando dois arquivos fastq Pair
 
 Ao abrir o arquivo mapping_summary.txt teremos um resumo interessante sobre nosso mapeamento:
 
+    $ cat hisat2_mapping_summary.txt 
+    12706540 reads; of these:
+      12706540 (100.00%) were paired; of these:
+        518434 (4.08%) aligned concordantly 0 times
+        11824017 (93.05%) aligned concordantly exactly 1 time
+        364089 (2.87%) aligned concordantly >1 times
+        ----
+        518434 pairs aligned concordantly 0 times; of these:
+          64609 (12.46%) aligned discordantly 1 time
+        ----
+        453825 pairs aligned 0 times concordantly or discordantly; of these:
+          907650 mates make up the pairs; of these:
+            386984 (42.64%) aligned 0 times
+            406481 (44.78%) aligned exactly 1 time
+            114185 (12.58%) aligned >1 times
+    98.48% overall alignment rate
 
 
 
@@ -59,7 +75,7 @@ Também é possível perceber que nosso arquivo SAM é muito maior que as reads 
     $ ls -ltr -h *.gz *.sam
     -rw-rw-r-- 1 bioinfo bioinfo 647M mar 11 11:01 SRR19649475_2.fastq.gz
     -rw-rw-r-- 1 bioinfo bioinfo 626M mar 11 11:54 SRR19649475_1.fastq.gz
-    -rw-rw-r-- 1 bioinfo bioinfo 3,4G mar 12 12:01 SRR19649475_hisat2.sam
+    -rw-rw-r-- 1 bioinfo bioinfo 8,6G mar 12 12:36 SRR19649475_hisat2.sam
 
 Veremos como melhorar isso nos passos que seguem.
 
