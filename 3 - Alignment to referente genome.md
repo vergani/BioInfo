@@ -3,7 +3,7 @@
 > [!TIP]
 > Neste ponto, você já fez o controle de qualidade das amostras e trimou (se necessário).
 
-## 3.1 Index the reference genome
+## 3.1 - Index the reference genome
 
 Nosso primeiro passo é indexar o genoma de referência para usando a ferramenta desejada. 
 
@@ -31,7 +31,7 @@ Criar índice da referencia, passo necessário para usar BWA:
 
 
 
-## Align reads to reference genome
+## 3.2 - Align reads to reference genome
 
 Uma vez criado o índíce, vamos alinhar nossas reads.
 
@@ -68,7 +68,7 @@ Um exemplo de entrada de um arquivo SAM é exibido abaixo com os diferentes camp
 
 
 
-## BAM file format
+## 3.3 - BAM file format
 
 > [!TIP]
 > Uma vez superada a etapa de mapeamento das reads, vamos converter nosso SAM para BAM.
