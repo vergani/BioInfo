@@ -62,8 +62,10 @@ Saída será algo parecido com isso:
     560102 + 0 with mate mapped to a different chr (mapQ>=5)
 
 > [!TIP]
-> Hipótese: Como estamos falando de uma amostra de WGS, é possível que os 23% não mapeados com sucesso, se referem a região "non-coding".
+> Ao alinhar amostras de WGS, é possível que os 23% não mapeados com sucesso, se referem a região "non-coding".
+
 > Se o mapeamento ficar ruim, talves está usando um genoma de referência errado ou o fastq do passo anterior não foi bem trimado.
+
 > Caso haja leituras duplicadas, podemos rodar um `MarkDuplicates`
 
     
