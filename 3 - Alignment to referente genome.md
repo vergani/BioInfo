@@ -151,7 +151,7 @@ After this step, you can further compress, index, and sort the BAM file using SA
 
 ### samtools flagstat
 
-Depois de rodar o mapeamento, é interessante rodar um flagstat do samtools para ver percentual de mapeamento e também se há leituras duplicadas.
+depois de rodar o mapeamento, é interessante rodar um flagstat do samtools para ver percentual de mapeamento e também se há leituras duplicadas.
 
 Exemplo de saída do comando `samtools flagstat sample.cram`
 
