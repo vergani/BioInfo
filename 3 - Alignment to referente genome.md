@@ -107,11 +107,13 @@ A versão binária compactada do SAM é chamada de arquivo BAM. Usamos esta vers
 Converteremos o arquivo SAM para o formato BAM usando o programa samtools com o comando view e informaremos a este comando que a entrada está no formato SAM (-S) e a saída está no formato BAM (-b):
 
     $ samtools view -S -b SRR19649475_hisat2.sam > SRR19649475_hisat2.bam
-    
+
+
+### Sort BAM file by coordinates
 
 Next we sort the BAM file using the sort command from samtools. -o tells the command where to write the output.
 
-    $ samtools sort -o sample_sorted.bam samlpe.bam 
+    $ samtools sort -o SRR19649475_hisat2_sorted.bam SRR19649475_hisat2.bam
 
 SAM/BAM files can be sorted in multiple ways, e.g. by location of alignment on the chromosome, by read name, etc. It is important to be aware that different alignment tools will output differently sorted SAM/BAM, and different downstream tools require differently sorted alignment files as input.
 
