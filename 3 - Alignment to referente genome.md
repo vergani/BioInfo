@@ -34,10 +34,6 @@ Resultado será mais ou menos este:
 
 ## Align reads to reference genome
 
-The alignment process consists of choosing an appropriate reference genome to map our reads against and then deciding on an aligner. We will use the BWA-MEM algorithm, which is the latest and is generally recommended for high-quality queries as it is faster and more accurate.
-
-An example of what a bwa command looks like is below. Neste caso estou usando dois arquivos fastq Paired_end usando o genoma de referência HG38:
-
 O processo de alinhamento consiste em escolher um genoma de referência apropriado para mapear nossas leituras e então decidir sobre um alinhador. 
 Usaremos o algoritmo BWA-MEM, que é o mais recente e geralmente recomendado para consultas de alta qualidade, pois é mais rápido e preciso.
 Um exemplo do bwa está abaixo. Neste caso estou usando dois arquivos fastq Paired_end usando o genoma de referência HG38:
