@@ -108,6 +108,11 @@ Converteremos o arquivo SAM para o formato BAM usando o programa samtools com o 
 
     $ samtools view -S -b SRR19649475_hisat2.sam > SRR19649475_hisat2.bam
 
+Veja que meu arquivo em foramto compacto ficou muito menor que o original:
+
+    -rw-rw-r-- 1 bioinfo bioinfo 8,6G mar 12 12:36 SRR19649475_hisat2.sam
+    -rw-rw-r-- 1 bioinfo bioinfo 1,8G mar 12 12:43 SRR19649475_hisat2.bam
+
 
 ### Sort BAM file by coordinates
 
@@ -115,7 +120,10 @@ Next we sort the BAM file using the sort command from samtools. -o tells the com
 
     $ samtools sort -o SRR19649475_hisat2_sorted.bam SRR19649475_hisat2.bam
 
-SAM/BAM files can be sorted in multiple ways, e.g. by location of alignment on the chromosome, by read name, etc. It is important to be aware that different alignment tools will output differently sorted SAM/BAM, and different downstream tools require differently sorted alignment files as input.
+SAM/BAM files can be sorted in multiple ways, e.g. by location of alignment on the chromosome, by read name, etc. 
+
+> [!WARNING]
+> It is important to be aware that different alignment tools will output differently sorted SAM/BAM, and different downstream tools require differently sorted alignment files as input.
 
 You can use samtools to learn more about this bam file as well.
 posso agora verificar a qualidade do alinhamento feito via samtools:
