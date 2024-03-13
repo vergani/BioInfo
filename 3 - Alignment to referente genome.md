@@ -80,7 +80,7 @@ Também é possível perceber que nosso arquivo SAM é muito maior que as reads 
 Veremos como melhorar isso nos passos que seguem.
 
 
-## SAM file format
+### SAM file format
 
 O arquivo SAM é um arquivo de texto delimitado por tabulações que contém informações para cada leitura individual e seu alinhamento com o genoma. 
 
