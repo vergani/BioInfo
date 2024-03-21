@@ -88,7 +88,23 @@ The first few columns represent the information we have about a predicted variat
 |QUAL 	        |Phred-scaled probability that the observed variant exists at this site (higher is better)|
 |FILTER 	a . |if no quality filters have been applied, PASS if a filter is passed, or the name of the filters this variant failed|
 
+In an ideal world, the information in the QUAL column would be all we needed to filter out bad variant calls. However, in reality we need to filter on multiple other metrics.
 
+The last two columns contain the genotypes and can be tricky to decode.
+
+|column 	    | info         |
+| ------------- | ------------- |
+|FORMAT 	    |lists in order the metrics presented in the final column|
+|results 	    |lists the values associated with those metrics in order|
+
+For our file, the metrics presented are GT:PL:GQ.
+
+|metric 	    |definition    |
+| ------------- | ------------- |
+|AD, DP 	|the depth per allele by sample and coverage|
+|GT 	    |the genotype for the sample at this loci. For a diploid organism, the GT field indicates the two alleles carried by the sample, encoded by a 0 for the REF allele, 1 for the first ALT allele, 2 for the second ALT allele, etc. A 0/0 means homozygous reference, 0/1 is heterozygous, and 1/1 is homozygous for the alternate allele.|
+|PL 	    |the likelihoods of the given genotypes|
+|GQ 	    |the Phred-scaled confidence for the genotype|
 
 ---
 
