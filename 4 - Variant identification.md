@@ -71,10 +71,9 @@ Explore the VCF format:
     CP000819.1      62118   .       A       G       225     .       DP=19;VDB=0.414981;SGB=-0.691153;MQSB=0.906029;MQ0F=0;AC=1;AN=1;DP4=0,0,8,10;MQ=59
     CP000819.1      64042   .       G       A       225     .       DP=18;VDB=0.451328;SGB=-0.689466;MQSB=1;MQ0F=0;AC=1;AN=1;DP4=0,0,7,9;MQ=60      GT:PL
 
-This is a lot of information, so let’s take some time to make sure we understand our output.
+São muitas informações, então vamos dedicar algum tempo para ter certeza de que entendemos nosso resultado.
 
-
-The first few columns represent the information we have about a predicted variation.
+As primeiras colunas representam as informações que temos sobre uma variação prevista.
 
 |column 	    | info         |
 | ------------- | ------------- |
@@ -86,16 +85,16 @@ The first few columns represent the information we have about a predicted variat
 |QUAL 	        |Phred-scaled probability that the observed variant exists at this site (higher is better)|
 |FILTER 	a . |if no quality filters have been applied, PASS if a filter is passed, or the name of the filters this variant failed|
 
-In an ideal world, the information in the QUAL column would be all we needed to filter out bad variant calls. However, in reality we need to filter on multiple other metrics.
+Em um mundo ideal, as informações na coluna QUAL seriam tudo de que precisávamos para filtrar chamadas de variantes incorretas. No entanto, na realidade, precisamos filtrar várias outras métricas.
 
-The last two columns contain the genotypes and can be tricky to decode.
+As duas últimas colunas contêm os genótipos e podem ser difíceis de decodificar.
 
 |column 	    | info         |
 | ------------- | ------------- |
 |FORMAT 	    |lists in order the metrics presented in the final column|
 |results 	    |lists the values associated with those metrics in order|
 
-For our file, the metrics presented are GT:PL:GQ.
+Para nosso arquivo, as métricas apresentadas são GT:PL:GQ.
 
 |metric 	    |definition    |
 | ------------- | ------------- |
