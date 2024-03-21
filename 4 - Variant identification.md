@@ -23,7 +23,10 @@ opções importantes:
 
 Pileup format provides a summarized view of the reads aligned to a reference genome at each genomic position. This information can be further used for variant calling.
 
-    $ bcftools mpileup -Ou -f Homo_sapiens_assembly38.fasta sample.cram | bcftools call -mv -Ov -o output.vcf
+The flag -O b tells bcftools to generate a bcf format output file, -o specifies where to write the output file, and -f flags the path to the reference genome:
+
+    $ bcftools mpileup -O b -o sample_raw.bcf -f Homo_sapiens_assembly38.fasta sample.cram 
+    
 
 We have now generated a raw file with coverage information for every base.
 
@@ -33,11 +36,14 @@ We have now generated a raw file with coverage information for every base.
 Identify SNVs using bcftools call:
 
     $ bcftools call -m -v -o
-    
+
+    bcftools call -mv -Ov -o output.vcf
 
 '-m' allows for multiallelic and rare-variant calling 
 
 '-v' tells the program to output variant sites only (not every site in the genome)
+
+'-Ov -o' indica que a saída será um VCF file
 
 
 ### Step 3: Filter and report the SNV variants in variant calling format (VCF)
