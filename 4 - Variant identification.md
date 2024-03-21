@@ -14,11 +14,11 @@ opções importantes:
 "variants only" = YES
 "output" = VCF
 
-0/0 - Homozygous to Reference
-0/1 - Heterozygous
-1/1 - Homozygous to Alternate
-
-![image](https://github.com/vergani/BioInfo/assets/35334365/ce4f26fd-2da8-40fb-b1ee-6460e3005ae8)
+    0/0 - Homozygous to Reference
+    
+    0/1 - Heterozygous
+    
+    1/1 - Homozygous to Alternate
 
 
 Pileup format provides a summarized view of the reads aligned to a reference genome at each genomic position. This information can be further used for variant calling.
