@@ -120,10 +120,3 @@ Um pequeno resumo visual de todo o VCF:
 
 
 
-
-
-
-## FreeBayes
-Variant detector
-Input: CRAM or BAM
-Choose parameter selection level: 	full
