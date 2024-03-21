@@ -5,11 +5,7 @@ The variant call format (VCF) is a generic format for storing DNA polymorphism d
 ![image](https://github.com/vergani/BioInfo/assets/35334365/57be2e32-2793-46d9-a9b2-159cbc741bdb)
 
 
-## FreeBayes
-Variant detector
-Input: CRAM or BAM
-Choose parameter selection level: 	full
-
+### Step 1: Calculate the read coverage of positions in the genome
 
 ## bcftool mpileup
 suposição: implesmente converte um BAM em um VCF file para depois usar num variant calling.
@@ -20,7 +16,32 @@ opções importantes:
 
 ![image](https://github.com/vergani/BioInfo/assets/35334365/ce4f26fd-2da8-40fb-b1ee-6460e3005ae8)
 
+
+Pileup format provides a summarized view of the reads aligned to a reference genome at each genomic position. This information can be further used for variant calling.
+
     $ bcftools mpileup -Ou -f Homo_sapiens_assembly38.fasta sample.cram | bcftools call -mv -Ov -o output.vcf
+
+We have now generated a raw file with coverage information for every base.
+
+
+### Step 2: Detect the single nucleotide variants (SNVs)
+
+Identify SNVs using bcftools call:
+
+    $ bcftools call -m -v -o
+    
+
+'-m' allows for multiallelic and rare-variant calling 
+
+'-v' tells the program to output variant sites only (not every site in the genome)
+
+
+### Step 3: Filter and report the SNV variants in variant calling format (VCF)
+????
+
+    $ vcfutils.pl varFilter results/vcf/SRR2584866_variants.vcf  > results/vcf/SRR2584866_final_variants.vcf
+
+---
 
 mas quantas variáveis de fato tenho nesta amostra e quais os tipos de variantes encontradas?
 
@@ -35,9 +56,19 @@ por isso é importante filtrar para anlisar
 vfcf ilter
 podemos por exemplo usar o filtro de qualidade acima de 200, para eliminar aquelas com menor certeza.
 
+
+---
+
 ## Tipos de variações genéticas
 
 ![image](https://github.com/vergani/BioInfo/assets/35334365/ffa49df4-8c0c-46fa-9e6f-ec16c141e8ae)
 
 
 
+
+
+
+## FreeBayes
+Variant detector
+Input: CRAM or BAM
+Choose parameter selection level: 	full
