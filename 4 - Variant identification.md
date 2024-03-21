@@ -31,9 +31,10 @@ The flag -O b tells bcftools to generate a bcf format output file, -o specifies 
 
     $ bcftools mpileup -O b -o sample_raw.bcf -f Homo_sapiens_assembly38.fasta sample.cram 
 
-Lembrando: arquivo.bcf é a versão "compressed" do VCF.
+> [!TIP]
+> We have now generated a raw file with coverage information for every base. arquivo.bcf é a versão "compressed" do VCF.
 
-We have now generated a raw file with coverage information for every base.
+
 
 
 ### Step 2: Detecte as variantes de nucleotídeo único (SNVs)
