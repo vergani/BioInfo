@@ -32,7 +32,8 @@ Pileup format provides a summarized view of the reads aligned to a reference gen
 The flag -O b tells bcftools to generate a bcf format output file, -o specifies where to write the output file, and -f flags the path to the reference genome:
 
     $ bcftools mpileup -O b -o sample_raw.bcf -f Homo_sapiens_assembly38.fasta sample.cram 
-    
+
+Lembrando: arquivo.bcf é a versão "compressed" do VCF.
 
 We have now generated a raw file with coverage information for every base.
 
