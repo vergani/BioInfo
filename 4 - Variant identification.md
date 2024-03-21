@@ -8,8 +8,6 @@ Independente das ferramentas usadas, o fluxo todo seria mais ou menos este:
 
 The variant call format (VCF) is a generic format for storing DNA polymorphism data such as SNPs, insertions, deletions and structural variants, together with rich annotations. VCF is usually stored in a compressed manner and can be indexed for fast data retrieval of variants from a range of positions on the reference genome.
 
-![image](https://github.com/vergani/BioInfo/assets/35334365/57be2e32-2793-46d9-a9b2-159cbc741bdb)
-
 
 ### Step 1: Calculate the read coverage of positions in the genome
 
@@ -105,6 +103,11 @@ For our file, the metrics presented are GT:PL:GQ.
 |GT 	    |the genotype for the sample at this loci. For a diploid organism, the GT field indicates the two alleles carried by the sample, encoded by a 0 for the REF allele, 1 for the first ALT allele, 2 for the second ALT allele, etc. A 0/0 means homozygous reference, 0/1 is heterozygous, and 1/1 is homozygous for the alternate allele.|
 |PL 	    |the likelihoods of the given genotypes|
 |GQ 	    |the Phred-scaled confidence for the genotype|
+
+
+Um pequeno resumo visual de todo o VCF:
+
+![image](https://github.com/vergani/BioInfo/assets/35334365/57be2e32-2793-46d9-a9b2-159cbc741bdb)
 
 ---
 
