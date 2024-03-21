@@ -15,8 +15,8 @@ The variant call format (VCF) is a generic format for storing DNA polymorphism d
 suposição: implesmente converte um BAM em um VCF file para depois usar num variant calling.
 em sequida, supostamente, basta rodar o bcftools call usando como input, o output do mpileup
 opções importantes:
-"variants only" = YES
-"output" = VCF
+`variants only = YES`
+`output = VCF`
 
     0/0 - Homozygous to Reference
     
@@ -44,9 +44,9 @@ Identify SNVs using bcftools call:
 
 `-m` allows for multiallelic and rare-variant calling 
 
-'-v' tells the program to output variant sites only (not every site in the genome)
+`-v` tells the program to output variant sites only (not every site in the genome)
 
-'-Ov -o' indica que a saída será um VCF file
+`-Ov -o` indica que a saída será um VCF file
 
 
 ### Step 3: Filter and report the SNV variants in variant calling format (VCF)
