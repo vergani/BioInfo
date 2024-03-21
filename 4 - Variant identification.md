@@ -6,7 +6,7 @@ Independente das ferramentas usadas, o fluxo todo seria mais ou menos este:
 
 
 
-The variant call format (VCF) is a generic format for storing DNA polymorphism data such as SNPs, insertions, deletions and structural variants, together with rich annotations. VCF is usually stored in a compressed manner and can be indexed for fast data retrieval of variants from a range of positions on the reference genome.
+O formato de chamada de variante (VCF) é um formato genérico para armazenar dados de polimorfismo de DNA, como SNPs, inserções, deleções e variantes estruturais, juntamente com anotações ricas. O VCF é geralmente armazenado de forma compactada e pode ser indexado para recuperação rápida de dados de variantes de uma variedade de posições no genoma de referência.
 
 
 ### Step 1: Calculate the read coverage of positions in the genome
