@@ -77,8 +77,15 @@ This is a lot of information, so let’s take some time to make sure we understa
 
 
 The first few columns represent the information we have about a predicted variation.
-column 	info
-CHROM 	contig location where the variation occurs
+
+| First Header  | Second Header |
+
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+|column 	    | info         |
+| ------------- | ------------- |
+|CHROM 	        |contig location where the variation occurs|
 POS 	position within the contig where the variation occurs
 ID 	a . until we add annotation information
 REF 	reference genotype (forward strand)
