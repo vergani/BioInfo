@@ -20,6 +20,8 @@ opções importantes:
 
 ![image](https://github.com/vergani/BioInfo/assets/35334365/ce4f26fd-2da8-40fb-b1ee-6460e3005ae8)
 
+    $ bcftools mpileup -Ou -f Homo_sapiens_assembly38.fasta sample.cram | bcftools call -mv -Ov -o output.vcf
+
 mas quantas variáveis de fato tenho nesta amostra e quais os tipos de variantes encontradas?
 
 vamos usar o bcftools counts
