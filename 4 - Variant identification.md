@@ -118,7 +118,7 @@ exemplo de saída
 importante: as vezes fica difícil distinguir uma variante verdadeira de um artefato trivial.
 por isso é importante filtrar para anlisar
 
-vfcf ilter
+vfcfilter
 podemos por exemplo usar o filtro de qualidade acima de 200, para eliminar aquelas com menor certeza.
 
 
