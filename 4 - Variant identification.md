@@ -78,11 +78,6 @@ This is a lot of information, so let’s take some time to make sure we understa
 
 The first few columns represent the information we have about a predicted variation.
 
-| First Header  | Second Header |
-
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
 |column 	    | info         |
 | ------------- | ------------- |
 |CHROM 	        |contig location where the variation occurs|
@@ -92,6 +87,7 @@ The first few columns represent the information we have about a predicted variat
 |ALT 	        |sample genotype (forward strand)|
 |QUAL 	        |Phred-scaled probability that the observed variant exists at this site (higher is better)|
 |FILTER 	a . |if no quality filters have been applied, PASS if a filter is passed, or the name of the filters this variant failed|
+
 
 
 ---
