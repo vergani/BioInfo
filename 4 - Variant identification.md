@@ -86,12 +86,12 @@ The first few columns represent the information we have about a predicted variat
 |column 	    | info         |
 | ------------- | ------------- |
 |CHROM 	        |contig location where the variation occurs|
-POS 	position within the contig where the variation occurs
-ID 	a . until we add annotation information
-REF 	reference genotype (forward strand)
-ALT 	sample genotype (forward strand)
-QUAL 	Phred-scaled probability that the observed variant exists at this site (higher is better)
-FILTER 	a . if no quality filters have been applied, PASS if a filter is passed, or the name of the filters this variant failed
+|POS 	        |position within the contig where the variation occurs|
+|ID 	a .     |until we add annotation information|
+|REF 	        |reference genotype (forward strand)|
+|ALT 	        |sample genotype (forward strand)|
+|QUAL 	        |Phred-scaled probability that the observed variant exists at this site (higher is better)|
+|FILTER 	a . |if no quality filters have been applied, PASS if a filter is passed, or the name of the filters this variant failed|
 
 
 ---
