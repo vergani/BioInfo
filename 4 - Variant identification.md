@@ -9,7 +9,7 @@ Independente das ferramentas usadas, o fluxo todo seria mais ou menos este:
 O formato de chamada de variante (VCF) é um formato genérico para armazenar dados de polimorfismo de DNA, como SNPs, inserções, deleções e variantes estruturais, juntamente com anotações ricas. O VCF é geralmente armazenado de forma compactada e pode ser indexado para recuperação rápida de dados de variantes de uma variedade de posições no genoma de referência.
 
 
-### Step 1: Calculate the read coverage of positions in the genome
+### Step 1: Calcule a cobertura de leitura de posições no genoma
 
 ## bcftool mpileup
 suposição: implesmente converte um BAM em um VCF file para depois usar num variant calling.
@@ -36,7 +36,7 @@ Lembrando: arquivo.bcf é a versão "compressed" do VCF.
 We have now generated a raw file with coverage information for every base.
 
 
-### Step 2: Detect the single nucleotide variants (SNVs)
+### Step 2: Detecte as variantes de nucleotídeo único (SNVs)
 
 Identify SNVs using bcftools call:
 
@@ -49,7 +49,7 @@ Identify SNVs using bcftools call:
 `-Ov -o` indica que a saída será um VCF file
 
 
-### Step 3: Filter and report the SNV variants in variant calling format (VCF)
+### Step 3: Filtre e relate as variantes SNV em formato de chamada de variante (VCF)
 ????
 
     $ vcfutils.pl varFilter results/vcf/SRR2584866_variants.vcf  > results/vcf/SRR2584866_final_variants.vcf
