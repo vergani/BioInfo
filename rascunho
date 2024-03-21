@@ -168,3 +168,14 @@ por isso é importante filtrar para anlisar
 vfcfilter
 podemos por exemplo usar o filtro de qualidade acima de 200, para eliminar aquelas com menor certeza.
 
+
+
+
+---
+
+
+## FreeBayes
+Variant detector
+Input: CRAM or BAM
+Choose parameter selection level: 	full
+
