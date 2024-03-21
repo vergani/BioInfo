@@ -35,9 +35,7 @@ We have now generated a raw file with coverage information for every base.
 
 Identify SNVs using bcftools call:
 
-    $ bcftools call -m -v -o
-
-    bcftools call -mv -Ov -o output.vcf
+    $ bcftools call -mv -Ov -o output_variants.vcf sample_raw.bcf 
 
 '-m' allows for multiallelic and rare-variant calling 
 
