@@ -44,7 +44,7 @@ Identify SNVs using bcftools call:
 
     $ bcftools call -mv -Ov -o output_variants.vcf sample_raw.bcf 
 
-'-m' allows for multiallelic and rare-variant calling 
+´-m´ allows for multiallelic and rare-variant calling 
 
 '-v' tells the program to output variant sites only (not every site in the genome)
 
