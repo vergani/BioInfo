@@ -5,8 +5,12 @@ Independente das ferramentas usadas, o fluxo todo seria mais ou menos este:
 ![image](https://github.com/vergani/BioInfo/assets/35334365/e47b6e9c-8163-4d99-9e33-8b8d5603d2e2)
 
 |Etapa 	    | Ferramentas         |
-| ------------- | ------------- |
-|etapa a 	        |ferramenta a, ferramenta b, etcc|
+| -------------         | ------------- |
+|Assessing Read Quality |fastqc|
+|Trimming and Filtering | + trim readas (se necessário)|
+|Alignment to referente |hipsat@, bwa, minimap...|
+|Varian identification  |bcftools,frebayes...|
+
 
 O formato de chamada de variante (VCF) é um formato genérico para armazenar dados de polimorfismo de DNA, como SNPs, inserções, deleções e variantes estruturais, juntamente com anotações ricas. O VCF é geralmente armazenado de forma compactada e pode ser indexado para recuperação rápida de dados de variantes de uma variedade de posições no genoma de referência.
 
