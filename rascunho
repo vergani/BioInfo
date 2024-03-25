@@ -179,3 +179,16 @@ Variant detector
 Input: CRAM or BAM
 Choose parameter selection level: 	full
 
+
+
+
+---
+
+RNA-Seq 
+É ligeiramente diferente dos pipelines usados para WGS, uma vez que as leituras mapearão apenas as áreas do genoma que codificam as transcrições de RNA, deixando as regiões restantes do genoma descobertas. 
+Programas especiais de mapeamento foram desenvolvidos, como TopHat e STAR que incluem algoritmos que ajudam a lidar com algumas leituras que são divididas como junçoes de emenda.
+
+Exome-Seq Analysis
+Outro tipo comum de sequenciamento é o Exome-Seq, que é o sequenciamento de todos os genes codificadores de proteínas no genoma. Isto é possível através da utilização de sondas que visam apenas 1% do genoma que codifica a proteína, deixando para trás os outros 99% do genoma. Esta á uma abordagem poderosa porque a maioria das mutações que causam doenças são encontradas no Exoma. As mesmas ferramentas de análise de dados para sequenciamento completo do genoma podem ser aplicadas aos dados Exome-Seq.
+
+
