@@ -1,5 +1,7 @@
 # 3 - Alinhar, mapear, avaliar qualidade
 
+Exmeplos de ferramentas: bwa, bowtie2, maq, stampy, novoalign, minimap, hisat2
+
 > [!TIP]
 > Neste ponto, você já fez o controle de qualidade das amostras e trimou (se necessário).
 
