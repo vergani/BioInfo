@@ -131,7 +131,7 @@ Para converter dois paired end fastq para sam e depois bam:
 
   bowtie2 -p 7 -x grch38_1kgmaj/grch38_1kgmaj -1 NG1P_1.fq.gz -2 NG1P_2.fq.gz -S NG-Vi-bowtie2-hg38.sam
 
-
+https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA745542
 Se for um single end (usar opção -U):
 
     bowtie2 -p 7 -x grch38_1kgmaj/grch38_1kgmaj -U DRR253030.fastq.gz -S DRR253030_bwt_hg38.sam
@@ -192,7 +192,7 @@ Exome-Seq Analysis
 Outro tipo comum de sequenciamento é o Exome-Seq, que é o sequenciamento de todos os genes codificadores de proteínas no genoma. Isto é possível através da utilização de sondas que visam apenas 1% do genoma que codifica a proteína, deixando para trás os outros 99% do genoma. Esta á uma abordagem poderosa porque a maioria das mutações que causam doenças são encontradas no Exoma. As mesmas ferramentas de análise de dados para sequenciamento completo do genoma podem ser aplicadas aos dados Exome-Seq.
 
 
-
+https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA745542
 
 https://www.ebi.ac.uk/ena/browser/view/SRR15130027
 https://www.coriell.org/0/Sections/Search/Sample_Detail.aspx?Ref=NA20241&Product=DNA
