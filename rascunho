@@ -192,3 +192,28 @@ Exome-Seq Analysis
 Outro tipo comum de sequenciamento é o Exome-Seq, que é o sequenciamento de todos os genes codificadores de proteínas no genoma. Isto é possível através da utilização de sondas que visam apenas 1% do genoma que codifica a proteína, deixando para trás os outros 99% do genoma. Esta á uma abordagem poderosa porque a maioria das mutações que causam doenças são encontradas no Exoma. As mesmas ferramentas de análise de dados para sequenciamento completo do genoma podem ser aplicadas aos dados Exome-Seq.
 
 
+### o que é uma leitura?
+esta leitura tem 50 langht bases, ou seja, tem 50 caracteres:
+TTGGGTAACTTGAATATAACATGGCTCCCTGCTCATGGCTCCCTCATATA
+
+SINGLE READS (sr) OR PAIRED-END READS (pe).
+sigle: somente num sentido
+paired-end: ida e volta (as duas terão o mesmo tamanho, mas com sentido inverso??)
+
+number of reads X read lenght = Number of base pairs
+
+ALIGNMENT
+- determine the location from which each read originated (where the sequence matches the reference most closely)
+- shorter sequencers may harder to place
+- increasing lenght helps... but not always
+    - paired sequence can help more when using long sequences.
+
+VARIANT CALLING
+- identify how the sample read sequences are different from the reference sequence
+
+considerations sobre Variant calling:
+- how to call the variant (depth/coverage)
+- somatic vs germline
+- how to annotate and interpret
+
+
