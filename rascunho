@@ -202,13 +202,13 @@ paired-end: ida e volta (as duas terão o mesmo tamanho, mas com sentido inverso
 
 number of reads X read lenght = Number of base pairs
 
-ALIGNMENT
+## ALIGNMENT
 - determine the location from which each read originated (where the sequence matches the reference most closely)
 - shorter sequencers may harder to place
 - increasing lenght helps... but not always
     - paired sequence can help more when using long sequences.
 
-VARIANT CALLING
+## VARIANT CALLING
 - identify how the sample read sequences are different from the reference sequence
 
 considerations sobre Variant calling:
@@ -216,4 +216,6 @@ considerations sobre Variant calling:
 - somatic vs germline
 - how to annotate and interpret
 
+Other observations:
+- greater coverage results in better confidence in the sample sequence
 
