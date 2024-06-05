@@ -219,3 +219,20 @@ considerations sobre Variant calling:
 Other observations:
 - greater coverage results in better confidence in the sample sequence
 
+
+## DOWNLOAD FROM EGA
+
+$ cat default_credential_file.json 
+{
+    "username": "rafael..",
+    "password": "pass"
+}
+
+
+$ pyega3 -cf /home/bioinfo/tools/EGA/default_credential_file.json files EGAD00001002276
+$ pyega3 -c 3 -cf /home/bioinfo/tools/EGA/default_credential_file.json fetch EGAF00001235095
+
+
+
+
+
