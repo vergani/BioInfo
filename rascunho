@@ -11,6 +11,10 @@ wget -nc https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v
 echo "-----------------------------------------------"
 
 
+
+esse dataset aqui ainda preciso tentar:
+https://ega-archive.org/datasets/EGAD00001003562
+
 > [!TIP]
 > Helpful advice for doing things better or more easily.
 
