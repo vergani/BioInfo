@@ -10,7 +10,14 @@ wget -nc https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v
 
 echo "-----------------------------------------------"
 
+Steps:
+- [x] Lorem ipsum
+- [X] Lorem ipsum
+- [X] Lorem ipsum
 
+### VALIDAR
+
+> Sample NA07537 was previously reported to be heterozygous with 29 CGG repeats in the normal allele and > 200 in the expanded allele, corresponding to a full mutation (Adler et al., 2011). The expanded allele was also characterized by PacBio sequencing, revealing a broad size distribution of 272–400 CGG repeats, which was confirmed by our data. Specifically, ONT sequencing reads ranged from a minimum of 196 to a maximum of 402 repeats, with a modal value of 342. Overall, the analysis of Xdrop-enriched samples by ONT sequencing allowed the accurate assessment of FMR1 repeat length for each allele, and their correct classification as normal, pre-mutation, or full mutation.
 
 esse dataset aqui ainda preciso tentar:
 https://ega-archive.org/datasets/EGAD00001003562
