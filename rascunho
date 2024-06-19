@@ -134,7 +134,13 @@ Ao abrir o arquivo mapping_summary.txt teremos um resumo interessante sobre noss
 
 agora vamos usar o `htseq` para ver o número de leituras de um gene em particulas naquele exoma
 
+---
 
+Nucleotídeos: A,T,C,G
+Aminoácidos: A,L,K,W
+Gene: uma sequencia de nucleotídeos
+Proteína: uma sequência de aminoácidos
+Genoma: uma sequência muito grande de nucleotídeos
 
 ---
 
