@@ -253,3 +253,71 @@ $ pyega3 -c 3 -cf /home/bioinfo/tools/EGA/default_credential_file.json fetch EGA
 
 
 
+
+
+
+
+https://stripy.org/
+
+git clone https://gitlab.com/andreassh/stripy-client.git
+and go to the downloaded
+folder: cd stripy-client/
+
+Install all required packages by executing: python3 -m pip install -r
+requirements.txt. In additional, you might also need to run: python3 -m pip
+install pywebview[qt]
+
+python3 stri.py [http://stri.py]
+
+pip install pysam
+pip install numpy
+pip install regex
+
+apt install libbz2-dev
+libzlma-dev
+
+
+
+se der problema na hora de abrir
+
+[W::find_file_url] Failed to open reference...
+ 
+wget https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta
+wget https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.fai 
+wget https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.ref_cache.tar.gz
+ 
+tar xzf Homo_sapiens_assembly38.ref_cache.tar.gz
+export REF_PATH="$(pwd)/ref/cache/%2s/%2s/%s:http://www.ebi.ac.uk/ena/cram/md5/%s"
+export REF_CACHE="$(pwd)/ref/cache/%2s/%2s/%s"
+
+
+
+
+
+
+
+
+
+
+
+$ samtools view -T human_g1k_v37.fasta -O CRAM -o out.cram NG1PSZ7BE9.mm
+[http://NG1PSZ7BE9.mm]2.sortdup.bqsr.cram "chrX:147912050-147912110"
+
+--------------------------------------------------------------------------------
+
+esse rodou sem erros:
+
+$ ./Hunter/bin/ExpansionHunter --reads NG1PSZ7BE9.mm
+[http://NG1PSZ7BE9.mm]2.sortdup.bqsr.cram --reference hg38.fa --variant-catalog
+variant_catalog.json --output-prefix saida
+
+2023-05-18T09:03:04,[Starting ExpansionHunter v5.0.0]
+2023-05-18T09:03:04,[Analyzing sample NG1PSZ7BE9.mm
+[http://NG1PSZ7BE9.mm]2.sortdup.bqsr]
+2023-05-18T09:03:04,[Initializing reference hg38.fa]
+2023-05-18T09:03:04,[Loading variant catalog from disk variant_catalog.json]
+2023-05-18T09:03:04,[Running sample analysis in seeking mode]
+2023-05-18T09:03:04,[Analyzing FMR1]
+2023-05-18T09:03:05,[Writing output to disk]
+
+
